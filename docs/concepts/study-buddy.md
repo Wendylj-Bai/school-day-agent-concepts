@@ -35,6 +35,16 @@ Normal: learner attempt → possible misconception → choose a vetted activity 
 
 Exception: if the child is still stuck, the agent tries another bounded approach; after a retry limit it asks for human help. The diagram shows the exception branch, not an automatic diagnosis of a child.
 
+## Plain-English diagram walkthrough
+
+1. The learner attempts a practice question instead of asking for a homework answer.
+2. Deterministic code checks whether the fresh response is correct.
+3. The Learning-State Agent records a possible misconception supported by the attempts, not a diagnosis or unofficial grade.
+4. The Teaching Agent selects a vetted hint or activity and asks a different question. It may try another approved strategy within a fixed retry limit.
+5. If difficulty continues, the system prepares a concise summary for an authorized parent, teacher, or adviser, who decides the appropriate follow-up.
+
+The agents choose explanations and next steps. Application code controls correctness, retries, approved content, and authorized sharing.
+
 ## Suggested buildathon-sized MVP (suggested / not implemented)
 
 No part of this stack is built or integrated yet; a stack to propose to the group, not a requirement or a claim that these integrations already work.

@@ -37,6 +37,16 @@ Normal: family opens hub or asks a question → app-enforced access check → ap
 
 Exception: if information is missing, sensitive, or needs educational judgment, the agent holds the answer and prepares a teacher or adviser follow-up. The educator's response becomes the authoritative source; the diagram does not claim this handoff is automatic.
 
+## Plain-English diagram walkthrough
+
+1. A parent or student asks about an assignment, event, educator-provided result, or teacher-marked review need.
+2. Application code checks identity and record-level permission before an agent sees information.
+3. The Evidence Agent retrieves approved facts with their source and date.
+4. The Coordination Agent provides a cited routine answer or prepares a focused clarification request when information conflicts, is missing, or needs judgment.
+5. A teacher or adviser provides official guidance. The AI does not change records or speak for the educator.
+
+Not every diagram box is an AI agent. The flow also includes deterministic application controls, approved information tools, and people with authority.
+
 ## Suggested buildathon-sized MVP (suggested / not implemented)
 
 No part of this stack is built or integrated yet; a stack to propose to the group, not a requirement or a claim that these integrations already work.
