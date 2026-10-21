@@ -8,7 +8,9 @@ Give parents and students one authorized place to review important school inform
 
 ## Plausible recurring problem
 
-A personal observation behind this concept is that some primary and secondary schools still rely heavily on handwritten notebook entries, individual text messages, and information passed through students. Parents may need to piece together notes about assignments, projects, events, results, or lessons that need follow-up. This observation motivates the concept, but it is not evidence that every school has the same problem.
+This concept is informed by my own experience as a parent navigating school communication during my children's primary-school years in the Philippines. I later served for two years as PTA president and then as a school board member, which gave me another view of communication between families and schools. More recently, I observed a parent friend in the United States navigating similar communication for her children.
+
+Some families may still need to piece together handwritten notebook entries, individual text messages, emails, assignments, projects, events, results, or lessons that need follow-up. These experiences provide a credible starting point, but they are not evidence that every school has the same problem or current validation across US primary schools.
 
 ## Problem-to-solution map
 
