@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {"title": "Personalized Study Buddy · Concept Workflow", "quality_profile": "showcase"},
+  "lanes": [
+    {"id": "learner", "label": "Learner"},
+    {"id": "tutor", "label": "Study agent"},
+    {"id": "content", "label": "Vetted teaching tools"},
+    {"id": "support", "label": "Support boundary", "variant": "exception"}
+  ],
+  "mainPath": ["attempt", "hypothesis", "activity", "hint", "check", "roadmap"],
+  "nodes": [
+    {"id": "attempt", "lane": "learner", "col": 0, "type": "frontend", "label": "Learner attempt", "sublabel": "fraction mistake", "width": 148},
+    {"id": "hypothesis", "lane": "tutor", "col": 1, "type": "backend", "label": "Spot pattern", "sublabel": "possible misconception", "width": 148},
+    {"id": "activity", "lane": "content", "col": 2, "type": "database", "label": "Choose activity", "sublabel": "vetted practice", "width": 148},
+    {"id": "hint", "lane": "tutor", "col": 3, "type": "backend", "label": "Give visual hint", "sublabel": "not the answer", "width": 148},
+    {"id": "check", "lane": "learner", "col": 4, "type": "frontend", "label": "New check question", "sublabel": "different example", "width": 148},
+    {"id": "roadmap", "lane": "tutor", "col": 5, "type": "backend", "label": "Update next step", "sublabel": "progress roadmap", "width": 148},
+    {"id": "retry", "lane": "support", "col": 4, "type": "messagebus", "label": "Try new approach", "sublabel": "bounded retry", "width": 148},
+    {"id": "handoff", "lane": "support", "col": 5, "type": "external", "label": "Ask a person", "sublabel": "after repeated struggle", "width": 148}
+  ],
+  "edges": [
+    {"from": "attempt", "to": "hypothesis"},
+    {"from": "hypothesis", "to": "activity", "label": "select"},
+    {"from": "activity", "to": "hint", "label": "vetted"},
+    {"from": "hint", "to": "check"},
+    {"from": "check", "to": "roadmap", "label": "evidence"},
+    {"from": "check", "to": "retry", "label": "still stuck", "role": "branch", "variant": "security"},
+    {"from": "retry", "to": "handoff", "label": "limit reached", "variant": "security"}
+  ],
+  "cards": [
+    {"dot": "cyan", "title": "Agent loop", "items": ["Observe → select vetted activity → check understanding", "Adapt the next step using a new question"]},
+    {"dot": "amber", "title": "Human boundary", "items": ["No assessed-work answers or unlimited sessions", "Parent or teacher helps after repeated difficulty"]}
+  ]
+}

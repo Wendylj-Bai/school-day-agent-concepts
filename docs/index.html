@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Two recurring-use Education agent concepts for Data Science Varsity 2026 team consideration.">
+  <title>Education Agent Concepts · DSV 2026</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site">
+    <nav class="wrap" aria-label="Primary navigation">
+      <a class="brand" href="index.html">DSV 2026 · Education</a>
+      <div class="nav-links"><a href="#concepts">Concepts</a><a href="#criteria">Criteria</a><a href="#discussion">Team discussion</a></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">Two proposals for team consideration</div>
+        <h1>Recurring education needs, designed as bounded agent workflows.</h1>
+        <p class="lead">One concept gives families a clearer connection to school information and educator follow-up. The other helps a learner move forward after a mistake while keeping parents and educators involved. Technology supports the relationship; it does not replace it.</p>
+        <div class="status-row" aria-label="Proposal status">
+          <span class="status">Prepared for team discussion</span>
+          <span class="status">No build selected yet</span>
+          <span class="status">Synthetic demo data only</span>
+        </div>
+        <div class="strip"><strong>Decision boundary:</strong> These are working hypotheses, not validated school needs, implemented products, or claims of measured impact. The purpose of this site is to help the team compare them before choosing what deserves deeper research and construction.</div>
+      </div>
+    </section>
+
+    <section class="section" id="concepts">
+      <div class="wrap">
+        <div class="section-heading">
+          <div class="eyebrow">Compare the directions</div>
+          <h2>Two users. Two recurring jobs. Two different agent loops.</h2>
+          <p class="muted">The concepts are alternatives, not parts of one oversized school platform.</p>
+        </div>
+        <div class="grid">
+          <article class="card concept-card">
+            <div class="concept-number">01</div>
+            <span class="tag">Family communication</span>
+            <h2>Family-School Communication Coordinator</h2>
+            <p><strong>For:</strong> Parents, students, teachers, and advisers coordinating school information and follow-up.</p>
+            <p><strong>Value:</strong> One authorized place for important notes, assignments, projects, events, results, questions, and educator follow-up.</p>
+            <ul class="compact-list">
+              <li><strong>Evidence Agent</strong> retrieves approved information within the family’s permitted scope.</li>
+              <li><strong>Coordination Agent</strong> provides a sourced answer or prepares an educator follow-up.</li>
+              <li>The application independently enforces identity, privacy, and record-level access.</li>
+            </ul>
+            <div class="actions"><a class="button" href="concepts/family-school.html">Explore this concept</a></div>
+          </article>
+
+          <article class="card concept-card">
+            <div class="concept-number">02</div>
+            <span class="tag">Adaptive learning support</span>
+            <h2>Personalized Study Buddy</h2>
+            <p><strong>For:</strong> A learner practicing a skill, with parents, teachers, or advisers supporting progress.</p>
+            <p><strong>Value:</strong> A better explanation and a fresh check question, plus an appropriate support signal when human follow-up would help.</p>
+            <ul class="compact-list">
+              <li><strong>Learning-State Agent</strong> identifies a possible misconception from attempts.</li>
+              <li><strong>Teaching Agent</strong> selects a vetted activity and guides the next step.</li>
+              <li>A deterministic checker assesses the response; authorized adults receive only useful progress and support information.</li>
+            </ul>
+            <div class="actions"><a class="button" href="concepts/study-buddy.html">Explore this concept</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="wrap">
+        <div class="section-heading">
+          <div class="eyebrow">Shared design principle</div>
+          <h2>Agents interpret and adapt. Code controls the rules.</h2>
+          <p class="muted">The proposed designs use multiple agents only where responsibilities are meaningfully different.</p>
+        </div>
+        <div class="flowline" aria-label="Shared agent workflow">
+          <div>User action</div><div>Deterministic access or answer check</div><div>Agent reasoning</div><div>Bounded tool call</div><div>Verify, adapt, or hand off</div>
+        </div>
+        <div class="grid three" style="margin-top:22px">
+          <div class="card"><h3>LangGraph</h3><p>Suggested orchestration layer for explicit state, agent routing, tool calls, retry limits, and human checkpoints.</p></div>
+          <div class="card"><h3>Base44 + Antigravity</h3><p>Base44 is an optional interface layer if integration is viable. Antigravity supports development; it is not a runtime agent.</p></div>
+          <div class="card"><h3>Participation by design</h3><p>Parents, students, teachers, and advisers remain visible participants. Narrow tools expose approved synthetic data, and the eventual application receives the required ArgosX security scan.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="criteria">
+      <div class="wrap">
+        <div class="section-heading">
+          <div class="eyebrow">Buildathon alignment</div>
+          <h2>How either concept could meet the judging criteria</h2>
+          <p class="muted">This is a design alignment, not a claim that the criteria have already been satisfied. A working prototype and test evidence would still be required.</p>
+        </div>
+        <div class="criteria-wrap">
+          <table class="criteria">
+            <thead><tr><th>Criterion</th><th>Proposed evidence in the design</th><th>What the team must prove</th></tr></thead>
+            <tbody>
+              <tr><td>Agent Design &amp; Architecture · 25%</td><td>Distinct agent roles, bounded tools, shared workflow state, deterministic controls, and human authority.</td><td class="proof">A coherent LangGraph implementation in which each component has a necessary responsibility.</td></tr>
+              <tr><td>Autonomy &amp; Self-correction · 20%</td><td>The workflow detects contradiction or unsuccessful learning and changes course within explicit limits.</td><td class="proof">Runtime traces showing tool use, verification, retry behavior, and honest escalation.</td></tr>
+              <tr><td>Real-world Impact · 20%</td><td>Parents, students, and educators receive value from repeated communication, coordination, or guided-practice needs.</td><td class="proof">Evidence that the residual problem matters and that the proposed assistance improves participation rather than weakening it.</td></tr>
+              <tr><td>Technical Execution · 20%</td><td>End-to-end interface, orchestration, synthetic data tools, controls, logs, and security testing.</td><td class="proof">Reliable integration, failure handling, repeatable tests, and the required ArgosX scan.</td></tr>
+              <tr><td>Demo &amp; Presentation · 15%</td><td>A seven-minute story shows a normal case, an exception, a changed course, and a human decision.</td><td class="proof">A rehearsed live demo with visible state and no unsupported impact claims.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark" id="discussion">
+      <div class="wrap">
+        <div class="decision-box">
+          <div class="eyebrow">The decision requested from the team</div>
+          <h2>Which problem deserves the next round of evidence and prototyping?</h2>
+          <p class="muted">The immediate goal is not to approve a finished architecture. It is to decide whether either direction merits a bounded discovery and MVP phase.</p>
+          <div class="questions">
+            <div class="question">Is the user and recurring problem clear?</div>
+            <div class="question">Would the workflow genuinely benefit from agents?</div>
+            <div class="question">Can we demonstrate it safely with synthetic data?</div>
+            <div class="question">Which concept will team members actively own?</div>
+          </div>
+          <div class="actions"><a class="button" href="concepts/family-school.html">Review Family-School</a><a class="button secondary" href="concepts/study-buddy.html">Review Study Buddy</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">Independent DSV 2026 concept presentation · Public and synthetic data only · No team selection or school endorsement claimed.</div></footer>
+</body>
+</html>

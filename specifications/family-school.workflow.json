@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {"title": "Family–School Communication · Concept Workflow", "quality_profile": "showcase"},
+  "lanes": [
+    {"id": "family", "label": "Family"},
+    {"id": "coordinator", "label": "Coordinator agent"},
+    {"id": "sources", "label": "Approved sources and rules"},
+    {"id": "school", "label": "Teacher review", "variant": "exception"}
+  ],
+  "mainPath": ["question", "scope", "retrieve", "compare", "verify", "answer"],
+  "nodes": [
+    {"id": "question", "lane": "family", "col": 0, "type": "frontend", "label": "Parent question", "sublabel": "Friday project?", "width": 148},
+    {"id": "scope", "lane": "coordinator", "col": 1, "type": "security", "label": "Check access", "sublabel": "enforced by app", "width": 148},
+    {"id": "retrieve", "lane": "sources", "col": 2, "type": "database", "label": "Retrieve notices", "sublabel": "approved class info", "width": 148},
+    {"id": "compare", "lane": "coordinator", "col": 3, "type": "backend", "label": "Compare updates", "sublabel": "dates and class", "width": 148},
+    {"id": "verify", "lane": "coordinator", "col": 4, "type": "backend", "label": "Verify evidence", "sublabel": "source + validity", "width": 148},
+    {"id": "answer", "lane": "family", "col": 5, "type": "frontend", "label": "Sourced answer", "sublabel": "or honest pause", "width": 148},
+    {"id": "conflict", "lane": "school", "col": 4, "type": "messagebus", "label": "Unclear deadline", "sublabel": "hold response", "width": 148},
+    {"id": "teacher", "lane": "school", "col": 5, "type": "external", "label": "Teacher clarifies", "sublabel": "authoritative update", "width": 148}
+  ],
+  "edges": [
+    {"from": "question", "to": "scope"},
+    {"from": "scope", "to": "retrieve", "label": "permitted"},
+    {"from": "retrieve", "to": "compare", "label": "notices"},
+    {"from": "compare", "to": "verify"},
+    {"from": "verify", "to": "answer", "label": "consistent"},
+    {"from": "verify", "to": "conflict", "label": "unclear", "role": "branch", "variant": "security"},
+    {"from": "conflict", "to": "teacher", "label": "review", "variant": "security"}
+  ],
+  "cards": [
+    {"dot": "cyan", "title": "Agent loop", "items": ["Retrieve approved information → compare → verify", "Answer only when supported; otherwise stop and route"]},
+    {"dot": "amber", "title": "Human boundary", "items": ["Application enforces family access", "Teacher resolves conflicts and controls official messages"]}
+  ]
+}

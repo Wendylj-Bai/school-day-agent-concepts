@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {"title": "Family-School Coordinator: Shared Information to Action", "quality_profile": "showcase"},
+  "lanes": [
+    {"id": "experience", "label": "Parent and Student Experience"},
+    {"id": "agents", "label": "Two-Agent Coordination Workflow"},
+    {"id": "school", "label": "Approved School Information and Human Authority", "variant": "exception"}
+  ],
+  "phases": [
+    {"id": "access_phase", "label": "Access", "fromCol": 0, "toCol": 1},
+    {"id": "understand_phase", "label": "Gather + understand", "fromCol": 2, "toCol": 3, "variant": "emphasis"},
+    {"id": "coordinate_phase", "label": "Coordinate + respond", "fromCol": 4, "toCol": 5, "variant": "dashed"}
+  ],
+  "groups": [
+    {"id": "agent_roles", "label": "Evidence and coordination responsibilities", "lane": "agents", "fromCol": 2, "toCol": 4, "variant": "emphasis"},
+    {"id": "human_authority", "label": "Teacher or adviser owns official records and guidance", "lane": "school", "fromCol": 4, "toCol": 5, "variant": "security"}
+  ],
+  "mainPath": ["family_hub", "access_check", "evidence_agent", "school_info", "request_router", "coordination_agent", "privacy_gate", "family_view"],
+  "semanticChecks": {
+    "allowedRoots": ["family_hub"],
+    "allowedTerminals": ["family_view", "educator"],
+    "requiredPaths": [
+      {"from": "family_hub", "to": "family_view"},
+      {"from": "request_router", "to": "educator"}
+    ]
+  },
+  "nodes": [
+    {"id": "family_hub", "lane": "experience", "col": 0, "type": "frontend", "label": "Family Hub", "sublabel": "updates, questions, follow-up", "width": 150},
+    {"id": "access_check", "lane": "experience", "col": 1, "type": "security", "label": "Access Check", "sublabel": "family + student scope", "tag": "deterministic", "width": 144},
+    {"id": "privacy_gate", "lane": "experience", "col": 4, "type": "security", "label": "Privacy and Citation Gate", "sublabel": "authorized facts only", "tag": "deterministic", "width": 168},
+    {"id": "family_view", "lane": "experience", "col": 5, "type": "frontend", "label": "Clear Next Step", "sublabel": "answer, task, or review", "width": 148},
+    {"id": "evidence_agent", "lane": "agents", "col": 2, "type": "backend", "label": "Evidence Agent", "sublabel": "collects approved records", "width": 150},
+    {"id": "request_router", "lane": "agents", "col": 3, "type": "backend", "label": "Request Router", "sublabel": "information or attention", "width": 150},
+    {"id": "coordination_agent", "lane": "agents", "col": 4, "type": "backend", "label": "Coordination Agent", "sublabel": "responds or prepares follow-up", "width": 166},
+    {"id": "school_info", "lane": "school", "col": 2, "type": "database", "label": "Approved School Information", "sublabel": "notes, work, events, results", "width": 178},
+    {"id": "followup_draft", "lane": "school", "col": 4, "type": "messagebus", "label": "Educator Follow-up", "sublabel": "question or support request", "width": 160},
+    {"id": "educator", "lane": "school", "col": 5, "type": "external", "label": "Teacher or Adviser", "sublabel": "reviews and replies", "tag": "human authority", "width": 156}
+  ],
+  "edges": [
+    {"id": "hub_access", "from": "family_hub", "to": "access_check", "label": "view or ask", "variant": "default"},
+    {"id": "access_evidence", "from": "access_check", "to": "evidence_agent", "label": "permitted scope", "variant": "security"},
+    {"id": "evidence_school", "from": "evidence_agent", "to": "school_info", "label": "retrieve", "variant": "default"},
+    {"id": "school_router", "from": "school_info", "to": "request_router", "label": "approved facts", "variant": "emphasis"},
+    {"id": "router_coordination", "from": "request_router", "to": "coordination_agent", "label": "supported request", "variant": "emphasis"},
+    {"id": "coordination_gate", "from": "coordination_agent", "to": "privacy_gate", "label": "draft + sources", "variant": "default"},
+    {"id": "gate_view", "from": "privacy_gate", "to": "family_view", "label": "authorized", "variant": "emphasis"},
+    {"id": "router_followup", "from": "request_router", "to": "followup_draft", "label": "needs attention", "variant": "security", "role": "branch"},
+    {"id": "followup_educator", "from": "followup_draft", "to": "educator", "label": "review request", "variant": "security"}
+  ]
+}
