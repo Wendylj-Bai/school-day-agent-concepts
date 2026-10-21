@@ -68,6 +68,9 @@ nav a { text-decoration: none; font-weight: 750; }
 .concept-card { display: flex; flex-direction: column; min-height: 100%; }
 .concept-card .actions { margin-top: auto; padding-top: 12px; }
 .concept-number { color: var(--teal); font-size: 3rem; line-height: 1; font-weight: 800; opacity: .28; }
+.concept-problem { margin: 8px 0 10px; padding: 18px 19px; border-left: 4px solid var(--amber); background: var(--amber-pale); border-radius: 0 12px 12px 0; }
+.concept-problem .eyebrow { margin-bottom: 7px; color: var(--amber); }
+.concept-problem p { margin: 0; }
 .compact-list { margin: 14px 0 20px; padding-left: 20px; }
 .compact-list li { margin: 7px 0; }
 
