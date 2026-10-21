@@ -22,7 +22,7 @@ Two exploratory Education proposals for Data Science Varsity 2026, chosen to pre
 
 - *Agentic AI for Education*, Professor Naveen - workshop slides reviewed locally for education process and human-centered problem framing.
 - [*Why Your AI Builder Can't Test Its Own App*, Anurag Wakhlu](https://www.youtube.com/watch?v=KtzD5H4_4iM) - independent application testing and the planned ArgosX scan.
-- [*AI Governance, Cybersecurity & Responsible Agentic AI*, Niharika Srivastav and Sanjay Saxena](https://www.youtube.com/watch?v=hqrPCQlkA7k) - foreseeable misuse, bounded autonomy, tool and data risks, human review, and continuing governance after deployment.
+- [*AI Governance, Cybersecurity & Responsible Agentic AI*, Niharika Srivastav and Sanjay Saxena](https://www.youtube.com/watch?v=hqrPCQlkA7k) - common cohort session retained here as a project reference; intentionally omitted from the team-facing presentation.
 
 These are learning sources and design influences, not evidence that either school need has been validated or that the presenters endorse these proposals.
 
