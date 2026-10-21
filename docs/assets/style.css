@@ -55,9 +55,11 @@ nav a { text-decoration: none; font-weight: 750; }
 .section.dark .muted { color: #c3d4d8; }
 .section.dark .eyebrow { color: #75d5d1; }
 .section-heading { max-width: 790px; margin-bottom: 28px; }
+.subheading { margin: 38px 0 16px; color: var(--navy); }
 .muted { color: var(--muted); }
 .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.problem-map { margin-bottom: 6px; }
 .card { border: 1px solid var(--line); background: var(--white); border-radius: 18px; padding: 27px; box-shadow: 0 9px 24px rgba(22,51,63,.035); }
 .card p:last-child { margin-bottom: 0; }
 .card .eyebrow { margin: 0 0 16px; }

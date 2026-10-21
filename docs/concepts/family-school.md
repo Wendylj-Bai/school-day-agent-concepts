@@ -10,6 +10,13 @@ Give parents and students one authorized place to review important school inform
 
 A personal observation behind this concept is that some primary and secondary schools still rely heavily on handwritten notebook entries, individual text messages, and information passed through students. Parents may need to piece together notes about assignments, projects, events, results, or lessons that need follow-up. This observation motivates the concept, but it is not evidence that every school has the same problem.
 
+## Problem-to-solution map
+
+- **Core problem:** parents, students, and educators may not have one reliable and authorized place for school information, questions, and follow-up.
+- **Pain experienced:** messages can be missed, repeated, misunderstood, or contradicted. Families piece together updates while educators answer repeated questions and correct misunderstandings.
+- **Agentic response:** the Evidence Agent retrieves approved information with its source and date. The Coordination Agent gives a cited routine answer or prepares an educator clarification request rather than guessing.
+- **Why agents:** the workflow must interpret a request, compare several authorized records, recognize uncertainty, and choose between answering and handing control to an educator.
+
 ## Intended value
 
 - **Parent:** review authorized school updates and teacher-provided performance information, then ask a focused question or coordinate follow-up.

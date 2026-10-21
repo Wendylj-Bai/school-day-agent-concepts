@@ -10,6 +10,13 @@ Help a student move forward after a practice mistake while keeping parents, teac
 
 A child answers ½ + ¼ as ²⁄₆. They may keep trying without knowing why their method fails. A static answer key reveals the result, not the misunderstanding; a parent may not know which explanation to try next. The child loses momentum during a recurring study session. This is a plausible scenario, not measured learning data.
 
+## Problem-to-solution map
+
+- **Core problem:** a student may need timely learning support when a teacher or a parent with subject knowledge is unavailable.
+- **Pain experienced:** repeated mistakes can become frustration; a generic explanation may not address the misunderstanding, and an unrestricted AI tutor may reveal the answer instead of supporting learning.
+- **Agentic response:** the Learning-State Agent identifies a possible misconception from practice attempts. The Teaching Agent selects a vetted strategy, presents a fresh question, and adapts when deterministic checking shows that the learner is still struggling.
+- **Why agents:** the workflow must observe the attempt, choose a teaching strategy, check whether it worked, adapt within a retry limit, and involve an authorized adult when needed.
+
 ## Intended value
 
 - **Student:** get a hint matched to the attempt, practice independently, and ask for help without receiving the answer.
