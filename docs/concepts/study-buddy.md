@@ -85,7 +85,7 @@ Uses fictional learner profiles only - not real childhood student data.
 
 **Smallest credible test:** use one skill (two-digit subtraction with regrouping), fixed answer checks, two teacher-approved teaching methods, and a clear retry limit. Compare the adjustable workflow with one fixed approved explanation using different but comparable questions before support, immediately afterward, and later without hints.
 
-**Design note:** an answer such as `52 − 27 = 35` suggests, but does not prove, a regrouping difficulty; it could also be a simple slip. Ask the learner about their reasoning before deciding what caused the error. A later version could add a high-school skill such as the distributive property (for example, `2(x + 3) = 14` answered as x = 5.5 instead of x = 4).
+**Design note:** an answer such as `52 − 27 = 35` suggests, but does not prove, a regrouping difficulty; it could also be a simple slip. Ask the learner about their reasoning before deciding what caused the error. The same idea could also apply to a high-school skill such as the distributive property (for example, `2(x + 3) = 14` answered as x = 5.5 instead of x = 4).
 
 **What would weaken the concept:** independent performance does not improve over a fixed explanation, the agent repeatedly misreads student reasoning, or the experience encourages answer dependence.
 

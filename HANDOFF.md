@@ -2,6 +2,8 @@
 
 **Read this first if you are an AI assistant (or teammate) picking up this repository.**
 
+> **What this repository is:** a **concept presentation** for Wendy's DSV 2026 group. The group will decide whether to adopt one of these concepts, change it, or choose a better idea, which may come from someone else. It is **not a build plan**. "Fixes" in this file mean making the presentation consistent, not preparing an implementation. Write and edit the content as proposals for discussion: no roadmaps, commitments, or "next version" language.
+
 | | |
 |---|---|
 | Last updated | 2026-10-22 |
