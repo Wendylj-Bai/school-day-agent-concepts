@@ -19,10 +19,11 @@
   "mainPath": ["family_hub", "access_check", "evidence_agent", "school_info", "request_router", "coordination_agent", "privacy_gate", "family_view"],
   "semanticChecks": {
     "allowedRoots": ["family_hub"],
-    "allowedTerminals": ["family_view", "educator"],
+    "allowedTerminals": ["family_view"],
     "requiredPaths": [
       {"from": "family_hub", "to": "family_view"},
-      {"from": "request_router", "to": "educator"}
+      {"from": "request_router", "to": "educator"},
+      {"from": "educator", "to": "family_view"}
     ]
   },
   "nodes": [
@@ -46,6 +47,7 @@
     {"id": "coordination_gate", "from": "coordination_agent", "to": "privacy_gate", "label": "draft + sources", "variant": "default"},
     {"id": "gate_view", "from": "privacy_gate", "to": "family_view", "label": "authorized", "variant": "emphasis"},
     {"id": "router_followup", "from": "request_router", "to": "followup_draft", "label": "needs attention", "variant": "security", "role": "branch"},
-    {"id": "followup_educator", "from": "followup_draft", "to": "educator", "label": "review request", "variant": "security"}
+    {"id": "followup_educator", "from": "followup_draft", "to": "educator", "label": "review request", "variant": "security"},
+    {"id": "educator_gate", "from": "educator", "to": "privacy_gate", "label": "approved reply", "variant": "security", "role": "return"}
   ]
 }

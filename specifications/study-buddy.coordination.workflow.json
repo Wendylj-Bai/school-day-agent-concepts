@@ -19,7 +19,7 @@
   "mainPath": ["attempt", "answer_check", "state_agent", "teaching_agent", "activity_tool", "fresh_question", "transfer_check"],
   "semanticChecks": {
     "allowedRoots": ["attempt"],
-    "allowedTerminals": ["transfer_check", "strategy_retry", "support_team"],
+    "allowedTerminals": ["strategy_retry", "support_team"],
     "requiredPaths": [
       {"from": "attempt", "to": "transfer_check"},
       {"from": "transfer_check", "to": "support_team"}
@@ -27,12 +27,12 @@
   },
   "nodes": [
     {"id": "attempt", "lane": "experience", "col": 0, "type": "external", "label": "Practice Attempt", "width": 140},
-    {"id": "answer_check", "lane": "experience", "col": 1, "type": "security", "label": "Answer Checker", "sublabel": "correct or incorrect", "tag": "deterministic", "width": 140},
+    {"id": "answer_check", "lane": "experience", "col": 1, "type": "security", "label": "Answer Checker", "tag": "deterministic", "width": 140},
     {"id": "fresh_question", "lane": "experience", "col": 4, "type": "frontend", "label": "Fresh Check Question", "sublabel": "different example", "width": 150},
-    {"id": "transfer_check", "lane": "experience", "col": 5, "type": "security", "label": "Transfer Check", "sublabel": "progress or support", "tag": "deterministic", "width": 144},
+    {"id": "transfer_check", "lane": "experience", "col": 5, "type": "security", "label": "Mock Quiz", "sublabel": "no hints · transfer", "tag": "deterministic", "width": 144},
     {"id": "state_agent", "lane": "agents", "col": 2, "type": "backend", "label": "Learning-State Agent", "sublabel": "possible misconception", "width": 150},
     {"id": "teaching_agent", "lane": "agents", "col": 3, "type": "backend", "label": "Teaching Agent", "sublabel": "selects strategy", "width": 140},
-    {"id": "strategy_retry", "lane": "agents", "col": 5, "type": "messagebus", "label": "Strategy Retry", "sublabel": "change method", "width": 140},
+    {"id": "strategy_retry", "lane": "agents", "col": 5, "type": "messagebus", "label": "Strategy Retry", "sublabel": "new approved pass", "width": 140},
     {"id": "activity_tool", "lane": "support", "col": 3, "type": "database", "label": "Vetted Activities", "sublabel": "approved hints", "width": 140},
     {"id": "support_summary", "lane": "support", "col": 4, "type": "messagebus", "label": "Support Summary", "sublabel": "progress and needs", "width": 140},
     {"id": "support_team", "lane": "support", "col": 5, "type": "external", "label": "Support Team", "sublabel": "parent, teacher, adviser", "tag": "human participation", "width": 140}
@@ -43,8 +43,8 @@
     {"id": "state_teach", "from": "state_agent", "to": "teaching_agent", "label": "possible misconception", "variant": "emphasis"},
     {"id": "teach_activity", "from": "teaching_agent", "to": "activity_tool", "label": "select strategy", "variant": "default"},
     {"id": "activity_question", "from": "activity_tool", "to": "fresh_question", "label": "hint + practice", "variant": "emphasis"},
-    {"id": "question_transfer", "from": "fresh_question", "to": "transfer_check", "label": "new response", "variant": "default"},
-    {"id": "check_retry", "from": "transfer_check", "to": "strategy_retry", "label": "retry available", "variant": "dashed", "role": "return"},
+    {"id": "question_transfer", "from": "fresh_question", "to": "transfer_check", "label": "no-hint check", "variant": "default"},
+    {"id": "check_retry", "from": "transfer_check", "to": "strategy_retry", "label": "retry", "variant": "dashed", "role": "branch"},
     {"id": "check_summary", "from": "transfer_check", "to": "support_summary", "label": "session result", "variant": "security", "role": "branch"},
     {"id": "summary_team", "from": "support_summary", "to": "support_team", "label": "authorized view", "variant": "security"}
   ]

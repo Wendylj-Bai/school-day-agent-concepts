@@ -43,7 +43,7 @@ Exception: if information is missing, sensitive, or needs educational judgment, 
 2. Application code checks identity and record-level permission before an agent sees information.
 3. The Evidence Agent retrieves approved facts with their source and date.
 4. The Coordination Agent provides a cited routine answer or prepares a focused clarification request when information conflicts, is missing, or needs judgment.
-5. A teacher or adviser provides official guidance. The AI does not change records or speak for the educator.
+5. A teacher or adviser provides official guidance. The approved reply returns through the privacy and citation gate before the family receives the clear next step. The AI does not change records or speak for the educator.
 
 Not every diagram box is an AI agent. The flow also includes deterministic application controls, approved information tools, and people with authority.
 

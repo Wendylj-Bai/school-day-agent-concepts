@@ -25,13 +25,13 @@ A child answers ½ + ¼ as ²⁄₆. They may keep trying without knowing why th
 
 ## Agent's job and why agentic
 
-The agent considers a possible misconception, chooses a vetted visual or exercise through a content tool, gives a hint instead of the answer, then asks a fresh question. It uses the new response to choose the next step on a small learning roadmap; after bounded retries it suggests a parent or teacher check-in.
+The agent considers a possible misconception, chooses a vetted visual or exercise through a content tool, gives a hint instead of the answer, then asks a fresh practice question. A short no-hint mock quiz checks independent transfer. The result either updates the learning roadmap or triggers a bounded strategy retry; after the retry limit it suggests a parent or teacher check-in.
 
 A fixed quiz cannot change its teaching strategy after an unsuccessful explanation. A generic chatbot may answer the homework outright. The agent's bounded observe → select → check → adapt loop is the feature to demonstrate; voice and avatars are optional, not the core innovation.
 
 ## Normal flow and exception / handoff
 
-Normal: learner attempt → possible misconception → choose a vetted activity → visual hint → different check question → next-step roadmap.
+Normal: learner attempt → possible misconception → choose a vetted activity → visual hint → fresh practice question → no-hint mock quiz → next-step roadmap.
 
 Exception: if the child is still stuck, the agent tries another bounded approach; after a retry limit it asks for human help. The diagram shows the exception branch, not an automatic diagnosis of a child.
 
@@ -48,8 +48,8 @@ This mode is for preparation and formative practice only. It must not provide he
 1. The learner attempts a practice question instead of asking for a homework answer.
 2. Deterministic code checks whether the fresh response is correct.
 3. The Learning-State Agent records a possible misconception supported by the attempts, not a diagnosis or unofficial grade.
-4. The Teaching Agent selects a vetted hint or activity and asks a different question. It may try another approved strategy within a fixed retry limit.
-5. If difficulty continues, the system prepares a concise summary for an authorized parent, teacher, or adviser, who decides the appropriate follow-up.
+4. The Teaching Agent selects a vetted hint or activity and asks a different practice question. A short no-hint mock quiz then checks independent transfer.
+5. If the learner needs more practice, the Strategy Retry step begins a new bounded pass with a different approved method. After the retry limit, the system prepares a concise summary for an authorized parent, teacher, or adviser, who decides the appropriate follow-up.
 
 The agents choose explanations and next steps. Application code controls correctness, retries, approved content, and authorized sharing.
 

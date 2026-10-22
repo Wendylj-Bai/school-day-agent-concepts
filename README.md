@@ -18,6 +18,7 @@ Two exploratory Education proposals for Data Science Varsity 2026, chosen to pre
 - [Family-School Communication Coordinator - Markdown brief](docs/concepts/family-school.md) · [HTML brief](docs/concepts/family-school.html)
 - [Personalized Study Buddy - Markdown brief](docs/concepts/study-buddy.md) · [HTML brief](docs/concepts/study-buddy.html)
 - [`family-school.coordination.workflow.json`](specifications/family-school.coordination.workflow.json) and [`study-buddy.coordination.workflow.json`](specifications/study-buddy.coordination.workflow.json) - current editable Archify presentation workflows
+- `family-school.workflow.json` and `study-buddy.workflow.json` are retained earlier drafts; they are not the sources for the linked presentation diagrams.
 
 ## Learning sources and design influences
 
