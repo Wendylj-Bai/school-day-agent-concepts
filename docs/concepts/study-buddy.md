@@ -35,6 +35,14 @@ Normal: learner attempt → possible misconception → choose a vetted activity 
 
 Exception: if the child is still stuck, the agent tries another bounded approach; after a retry limit it asks for human help. The diagram shows the exception branch, not an automatic diagnosis of a child.
 
+## Practice and mock-test mode
+
+The Study Buddy can also generate a short quiz or mock test from a teacher-approved question bank for test preparation. During the mock attempt, hints and answers stay locked so the result reflects independent practice rather than assisted performance.
+
+After submission, deterministic code scores objective items. The agents then explain missed concepts using approved material, recommend a focused practice sequence, and create a fresh follow-up quiz. The system reports practice readiness and topics for review, not an official grade or a prediction of the student's real test score.
+
+This mode is for preparation and formative practice only. It must not provide help during a live, graded, or restricted assessment.
+
 ## Plain-English diagram walkthrough
 
 1. The learner attempts a practice question instead of asking for a homework answer.
@@ -64,7 +72,7 @@ Uses fictional learner profiles only - not real childhood student data.
 1. A fictional learner makes a common mistake while adding fractions with unlike denominators.
 2. The agent selects a vetted explanation and fraction-bar visual, then asks a different check question without revealing the assignment answer.
 3. The learner still struggles; the agent switches strategy within a retry limit and updates the visible roadmap.
-4. A new question checks transfer. The system produces a concise support summary so a parent can encourage review and a teacher or adviser can guide the next lesson.
+4. A short no-hint mock quiz checks independent transfer. After submission, the system produces a concise support summary so a parent can encourage review and a teacher or adviser can guide the next lesson.
 
 ## Research validation and evidence limits
 
@@ -87,7 +95,7 @@ Uses fictional learner profiles only - not real childhood student data.
 
 ## Measures
 
-Success on a different post-hint problem, wrong-answer leakage, appropriate strategy changes, retry compliance, useful support signals, and timely human follow-up. Compare against a fixed explanation on the same synthetic mistakes; do not claim learning outcomes from a scripted demo.
+Success on different post-hint and no-hint mock-test questions, wrong-answer leakage, appropriate strategy changes, retry compliance, useful support signals, and timely human follow-up. Compare against a fixed explanation on the same synthetic mistakes; do not claim learning outcomes from a scripted demo.
 
 ## Assumptions / questions
 
