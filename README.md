@@ -2,6 +2,8 @@
 
 Two exploratory Education proposals for Data Science Varsity 2026, chosen to present to the group for discussion.
 
+> **Picking up this work?** Start with [HANDOFF.md](HANDOFF.md): current status, open fixes, pending decisions, and the agreed vocabulary.
+
 ## Overview of decisions
 
 - The earlier `dsv-agentic-ai-concept-gallery/` is preserved untouched and not superseded by these pages.
@@ -10,7 +12,7 @@ Two exploratory Education proposals for Data Science Varsity 2026, chosen to pre
 - Both concepts target recurring use and a clear problem, not an AI feature list.
 - Both concept briefs now include research-validation sections that separate evidence for the underlying problem from proof still required for the proposed product.
 - The concept flow diagrams illustrate the job; they are not committed production architecture.
-- Each presentation now proposes two bounded agent roles because the responsibilities differ. The team should retain the split only if implementation and evaluation show value beyond a simpler single-agent flow.
+- Each presentation proposes two limited agent roles because the responsibilities differ. The team should keep two agents only if testing shows value beyond a simpler single-agent flow.
 
 ## Links
 
@@ -28,4 +30,4 @@ Two exploratory Education proposals for Data Science Varsity 2026, chosen to pre
 
 These are learning sources and design influences, not evidence that either school need has been validated or that the presenters endorse these proposals.
 
-Use fictional learners and families and synthetic school data in demos. These are problem hypotheses for group consideration, not validated demand, school approval, implemented integrations, or verified impact. Tool/framework selection belongs to the eventual team build. The HTML pages map each proposal to the published buildathon criteria without claiming those criteria have already been satisfied.
+Use fictional learners, families, and school information in demos. These are problem hypotheses for group consideration, not validated demand, school approval, a working system, or verified impact. The team can choose the technical tools later. The HTML pages connect each proposal to the published buildathon criteria without claiming those criteria have already been satisfied.
