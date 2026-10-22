@@ -68,6 +68,25 @@ Uses fictional parents, families, and notices only.
 3. The parent asks which lesson needs attention; the system surfaces only the teacher-marked topic and source, not an AI diagnosis.
 4. The Coordination Agent prepares a focused educator follow-up, and the teacher or adviser provides the authorized next step.
 
+## Research validation and evidence limits
+
+**Current judgment:** published research supports the underlying communication problem and shows that some targeted parent-information interventions can affect specific outcomes. It does not prove demand for this coordinator, that generative AI is necessary, or that the proposed two-agent design will save educators time.
+
+- A 2025 Gallup survey of 808 US K–12 parents found that 42% said their school had shared little or nothing about the goals for their child's math learning. High-school parents reported less frequent lesson communication than elementary-school parents. This supports a need for clearer learning information, but it covers math communication rather than every school message.
+- An Institute of Education Sciences evaluation involving about 26,000 elementary students found that adaptive parent text messages reduced chronic absence but did not improve reading or mathematics achievement after one school year. This shows that communication can affect a specific outcome without proving broad academic impact.
+- Existing products already answer school questions. Therefore, the useful hypothesis is narrower: permissioned, student-specific reconciliation of approved sources, explicit conflict handling, and an educator clarification loop.
+
+**Stronger problem framing:** families may struggle to determine which approved information is current, what action is required, and when an educator must clarify the situation. If useful information was never recorded, the coordinator can request clarification but cannot manufacture the missing answer.
+
+**Smallest credible test:** use one fictional parent, student, class, revised deadline, and educator review queue. Plant an older notice that conflicts with a newer authoritative record. Compare the prototype with ordinary portal or message search on correct answers, time to find information, unsupported statements, clarification usefulness, and educator review effort.
+
+**What would weaken the concept:** families already find reliable answers quickly, approved student-scoped access is impractical, or the workflow creates more educator review and data-entry work than it removes.
+
+### Research sources
+
+- [Gallup: School-to-Family Outreach on Math Varies by Grade Level](https://news.gallup.com/poll/658619/school-family-outreach-math-varies-grade-level.aspx), April 23, 2025.
+- [Institute of Education Sciences: Can Texting Parents Improve Attendance in Elementary School?](https://ies.ed.gov/use-work/resource-library/report/evaluation-report/can-texting-parents-improve-attendance-elementary-school-test-adaptive-messaging-strategy), September 2020.
+
 ## Measures
 
 Source accuracy; unauthorized-access denials; unsupported inferences blocked; useful educator follow-up requests; and educator review time. Compare against the existing notebook, text, or portal workflow; do not claim measured outcomes from a scripted demo.

@@ -8,6 +8,7 @@ Two exploratory Education proposals for Data Science Varsity 2026, chosen to pre
 - These two concepts are being prepared for a group presentation; the group has not selected a project to build. Both are hypotheses, not validated school needs.
 - Interviews were intentionally not made a prerequisite during the semester-break / group-selection phase; evidence gathering belongs to the eventual team build.
 - Both concepts target recurring use and a clear problem, not an AI feature list.
+- Both concept briefs now include research-validation sections that separate evidence for the underlying problem from proof still required for the proposed product.
 - The concept flow diagrams illustrate the job; they are not committed production architecture.
 - Each presentation now proposes two bounded agent roles because the responsibilities differ. The team should retain the split only if implementation and evaluation show value beyond a simpler single-agent flow.
 

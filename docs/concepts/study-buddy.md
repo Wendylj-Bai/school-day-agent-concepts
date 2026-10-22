@@ -61,10 +61,29 @@ No part of this stack is built or integrated yet; a stack to propose to the grou
 
 Uses fictional learner profiles only - not real childhood student data.
 
-1. A fictional learner makes a common mistake in an equivalent-fractions exercise.
+1. A fictional learner makes a common mistake while adding fractions with unlike denominators.
 2. The agent selects a vetted explanation and fraction-bar visual, then asks a different check question without revealing the assignment answer.
 3. The learner still struggles; the agent switches strategy within a retry limit and updates the visible roadmap.
 4. A new question checks transfer. The system produces a concise support summary so a parent can encourage review and a teacher or adviser can guide the next lesson.
+
+## Research validation and evidence limits
+
+**Current judgment:** the need for additional learning support is well documented, and tutoring is an evidence-supported intervention category. There is no measured learning benefit yet for this product, its misconception interpretation, or its two-agent design.
+
+- J-PAL's review of experimental PreK–12 tutoring studies reported an overall pooled learning effect of 0.37 standard deviations. That result concerns the tutoring programs studied; it is not an expected effect size for an AI tutor.
+- A Penn/Wharton experiment with nearly 1,000 high-school mathematics students in Turkey found that general-purpose GPT improved assisted practice but students performed 17% worse than the control group when AI was removed. A teacher-informed, guarded GPT tutor mitigated that harm but did not outperform the control group on the independent exam. This supports hints, safeguards, and checks without assistance; it does not establish effectiveness for US elementary fractions.
+- Guided AI tutoring already exists. Hints alone are not a meaningful distinction. The testable hypothesis is whether a bounded tutor that changes among teacher-approved strategies after an unsuccessful attempt improves performance on a fresh problem and produces useful human follow-up.
+
+**Smallest credible test:** use one fractions skill, deterministic checking, two vetted instructional representations, and an explicit retry limit. Compare the adaptive workflow with a fixed vetted explanation using different but comparable questions before support, immediately afterward, and later without hints.
+
+**Important content correction:** adding numerators and denominators in `1/2 + 1/4 = 2/6` is a fraction-addition error, not automatically an equivalent-fractions error. The team should either make fraction addition the target skill or use attempts that directly test equivalence. Ask the learner about their reasoning before treating an error pattern as a misconception.
+
+**What would weaken the concept:** independent performance does not improve over a fixed explanation, the agent repeatedly misreads student reasoning, or the experience encourages answer dependence.
+
+### Research sources
+
+- [J-PAL: The Transformative Potential of Tutoring for Pre K–12 Learning Outcomes](https://www.povertyactionlab.org/publication/transformative-potential-tutoring-pre-k-12-learning-outcomes-lessons-randomized), 2020.
+- [Knowledge at Wharton: Without Guardrails, Generative AI Can Harm Education](https://knowledge.wharton.upenn.edu/article/without-guardrails-generative-ai-can-harm-education/), August 27, 2024.
 
 ## Measures
 
