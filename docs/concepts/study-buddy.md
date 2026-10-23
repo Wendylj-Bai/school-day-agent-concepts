@@ -80,7 +80,9 @@ Uses fictional learner profiles only - not real childhood student data.
 **Current judgment:** the need for additional learning support is well documented, and research supports tutoring as a type of learning support. There is no measured learning benefit yet for this product, how it interprets learner mistakes, or its two-agent design.
 
 - J-PAL's review of experimental PreK–12 tutoring studies reported an overall pooled learning effect of 0.37 standard deviations. That result concerns the tutoring programs studied; it is not an expected effect size for an AI tutor.
+- A 2026 Pew Research Center survey found that 54% of US teens ages 13 to 17 had used AI chatbots for schoolwork, and one in ten said chatbots helped with all or most of their schoolwork. This shows that AI-assisted schoolwork is already common among teens. It does not describe younger children or prove that students are learning from the assistance.
 - A Penn/Wharton experiment with nearly 1,000 high-school mathematics students in Turkey found that general-purpose GPT improved assisted practice but students performed 17% worse than the control group when AI was removed. A teacher-informed, guarded GPT tutor mitigated that harm but did not outperform the control group on the independent exam. This supports hints, safeguards, and checks without assistance; it does not establish effectiveness for US elementary subtraction.
+- Stanford's Tutor CoPilot trial involved more than 700 tutors and 1,000 students. Students whose human tutors used the AI support were 4 percentage points more likely to master math topics. The tool also increased probing questions and reduced generic praise. This supports AI assisting a person who teaches, but it does not test a child using an AI tutor alone at home.
 - Guided AI tutoring already exists. Hints alone are not a meaningful difference. The question to test is whether a tutor that changes among teacher-approved methods after an unsuccessful attempt improves performance on a new problem and produces useful human follow-up.
 
 **Smallest credible test:** use one skill (two-digit subtraction with regrouping), fixed answer checks, two teacher-approved teaching methods, and a clear retry limit. Compare the adjustable workflow with one fixed approved explanation using different but comparable questions before support, immediately afterward, and later without hints.
@@ -92,7 +94,9 @@ Uses fictional learner profiles only - not real childhood student data.
 ### Research sources
 
 - [J-PAL: The Transformative Potential of Tutoring for Pre K–12 Learning Outcomes](https://www.povertyactionlab.org/publication/transformative-potential-tutoring-pre-k-12-learning-outcomes-lessons-randomized), 2020.
+- [Pew Research Center: How Teens Use and View AI](https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/), February 24, 2026.
 - [Knowledge at Wharton: Without Guardrails, Generative AI Can Harm Education](https://knowledge.wharton.upenn.edu/article/without-guardrails-generative-ai-can-harm-education/), August 27, 2024.
+- [Stanford National Student Support Accelerator: Tutor CoPilot](https://nssa.stanford.edu/studies/tutor-copilot-human-ai-approach-scaling-real-time-expertise), 2025.
 
 ## Measures
 

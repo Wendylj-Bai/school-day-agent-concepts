@@ -73,6 +73,8 @@ Uses fictional parents, families, and notices only.
 **Current judgment:** published research supports the underlying communication problem and shows that some targeted parent-information interventions can affect specific outcomes. It does not prove demand for this coordinator, that generative AI is necessary, or that the proposed two-agent design will save educators time.
 
 - A Gallup survey of 808 US K–12 parents (conducted December 2024, published April 2025) found that 42% said their school had shared little or nothing about the goals for their child's math learning. High-school parents reported less frequent lesson communication than elementary-school parents. This supports a need for clearer learning information, but it covers math communication rather than every school message.
+- A separate 2023 Gallup and Learning Heroes survey found that 88% of parents believed their child was at or above grade level in reading and 89% believed the same for math. Gallup reported a clear difference between those beliefs and other achievement measures. This supports the need for clearer explanations of student progress, but it does not show that an AI coordinator is the best solution.
+- OECD's TALIS 2024 results show that full-time lower-secondary teachers spend an average of 1.8 hours per week communicating and cooperating with parents or guardians. Around seven in ten teachers also reported using digital tools for parent communication "quite a bit" or "a lot." This shows that family communication is a regular part of teacher workload, though the international average may not describe every US school.
 - An Institute of Education Sciences evaluation involving about 26,000 elementary students found that adaptive parent text messages reduced chronic absence but did not improve reading or mathematics achievement after one school year. This shows that communication can affect a specific outcome without proving broad academic impact.
 - Existing products already answer school questions. Therefore, the useful hypothesis is narrower: permissioned, student-specific reconciliation of approved sources, explicit conflict handling, and an educator clarification loop.
 
@@ -85,6 +87,8 @@ Uses fictional parents, families, and notices only.
 ### Research sources
 
 - [Gallup: School-to-Family Outreach on Math Varies by Grade Level](https://news.gallup.com/poll/658619/school-family-outreach-math-varies-grade-level.aspx), April 23, 2025.
+- [Gallup: Should Parents Ask More Questions When Child Receives B's?](https://news.gallup.com/opinion/gallup/513947/parents-ask-questions-child-receives.aspx), November 14, 2023.
+- [OECD: Professional Relationships in School Communities, TALIS 2024](https://www.oecd.org/en/publications/results-from-talis-2024_90df6235-en/full-report/professional-relationships-in-school-communities_b6ddef33.html), 2025.
 - [Institute of Education Sciences: Can Texting Parents Improve Attendance in Elementary School?](https://ies.ed.gov/use-work/resource-library/report/evaluation-report/can-texting-parents-improve-attendance-elementary-school-test-adaptive-messaging-strategy), September 2020.
 
 ## Measures
