@@ -19,7 +19,7 @@ Some families may still need to piece together handwritten notebook entries, ind
 - **How the AI could help:** the Evidence Agent finds approved information with its source and date. The Coordination Agent gives an answer supported by those sources or prepares a question for an educator rather than guessing.
 - **Why agents:** the workflow must interpret a request, compare several authorized records, recognize uncertainty, and choose between answering and handing control to an educator.
 
-**Opportunity hypothesis:** schools are already willing to use technology for communication. The unmet need may be a more reliable and coordinated approach that fits the school's actual process, rather than another disconnected app. The research supports technology adoption and problems with fragmented tools; it does not yet prove that schools want this specific platform.
+**Design interpretation:** schools are already using technology for communication, yet families and educators still report problems with fragmented tools, excessive information, and difficulty navigating multiple platforms. This documented problem is the basis for proposing a more reliable and coordinated agent workflow rather than another disconnected app.
 
 ## Intended value
 
@@ -72,7 +72,7 @@ Uses fictional parents, families, and notices only.
 
 ## Research validation and evidence limits
 
-**Current judgment:** published research supports the underlying communication problem and shows that some targeted parent-information interventions can affect specific outcomes. It does not prove demand for this coordinator, that generative AI is necessary, or that the proposed two-agent design will save educators time.
+**Current judgment:** published research supports that school communication can remain fragmented and difficult even when digital tools are available. Families may receive too much information across several platforms, while teachers spend time managing communication and disconnected tools. This validates the problem as a credible education-domain challenge. The agent workflow is our proposed response and must still be demonstrated in the prototype.
 
 - A Gallup survey of 808 US K–12 parents (conducted December 2024, published April 2025) found that 42% said their school had shared little or nothing about the goals for their child's math learning. High-school parents reported less frequent lesson communication than elementary-school parents. This supports a need for clearer learning information, but it covers math communication rather than every school message.
 - A separate 2023 Gallup and Learning Heroes survey found that 88% of parents believed their child was at or above grade level in reading and 89% believed the same for math. Gallup reported a clear difference between those beliefs and other achievement measures. This supports the need for clearer explanations of student progress, but it does not show that an AI coordinator is the best solution.
@@ -82,7 +82,7 @@ Uses fictional parents, families, and notices only.
 - An Institute of Education Sciences evaluation involving about 26,000 elementary students found that adaptive parent text messages reduced chronic absence but did not improve reading or mathematics achievement after one school year. This shows that communication can affect a specific outcome without proving broad academic impact.
 - Existing products already answer school questions. Therefore, the useful hypothesis is narrower: permissioned, student-specific reconciliation of approved sources, explicit conflict handling, and an educator clarification loop.
 
-**Stronger problem framing:** the opportunity is not to persuade schools to use technology. It is to test whether administrators, teachers, families, and students need a better-coordinated communication layer that fits their process. Families may struggle to determine which approved information is current, what action is required, and when an educator must clarify the situation. If useful information was never recorded, the coordinator can request clarification but cannot manufacture the missing answer.
+**Stronger problem framing:** schools are already using communication technology, but using many separate tools can leave administrators, teachers, families, and students without one reliable view of current information. Families may struggle to determine which message is current, what action is required, and when an educator must clarify the situation. The proposed agent workflow addresses that documented coordination problem by checking approved sources and involving an educator instead of guessing.
 
 **Smallest credible test:** use one fictional parent, student, class, revised deadline, and educator review queue. Plant an older notice that conflicts with a newer authoritative record. Compare the prototype with ordinary portal or message search on correct answers, time to find information, unsupported statements, clarification usefulness, and educator review effort.
 
