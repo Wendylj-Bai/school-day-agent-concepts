@@ -119,6 +119,7 @@ nav a { text-decoration: none; font-weight: 750; }
 
 .decision-box { padding: 30px; border-radius: 18px; background: var(--white); color: var(--ink); }
 .decision-box h2 { max-width: 21ch; }
+.section.dark .decision-box .muted { color: var(--teal-dark); }
 .questions { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; margin-top: 22px; }
 .question { padding: 16px 18px; border-radius: 12px; background: var(--paper); border: 1px solid var(--line); font-weight: 700; }
 footer { padding: 36px 0; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); }
