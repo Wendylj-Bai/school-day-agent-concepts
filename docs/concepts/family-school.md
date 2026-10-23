@@ -35,6 +35,8 @@ Fixed reminders work for uncomplicated updates. The agents earn their place when
 
 ## Normal flow and exception / handoff
 
+The workflow diagram demonstrates the selected seven-minute use case, not every possible app scenario.
+
 Normal: family opens the hub or asks a question → the app checks permission → the Evidence Agent finds approved school information → the Coordination Agent decides whether it can answer → privacy and sources are checked → the family receives an answer or next step.
 
 Exception: if information is missing, sensitive, or needs educational judgment, the Coordination Agent holds the answer and prepares a teacher or adviser follow-up. The educator's clarification returns to the Coordination Agent and becomes the authoritative source; the diagram does not claim this handoff is automatic.

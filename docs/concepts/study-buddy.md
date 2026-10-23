@@ -31,6 +31,8 @@ A fixed quiz cannot change its teaching method after an unsuccessful explanation
 
 ## Normal flow and exception / handoff
 
+The workflow diagram demonstrates the selected seven-minute use case, not every possible app scenario.
+
 Normal: learner attempt → answer check → identify a possible learning difficulty → choose an approved activity → hint → new practice question → new answer check → mock quiz without hints → support summary → next practice steps.
 
 Exception: if the new answer is still incorrect, Try Another Method sends the Teaching Agent back with one other approved approach. When the retry limit is reached, it asks for human help. The diagram shows this alternative path, not an automatic diagnosis of a child.
