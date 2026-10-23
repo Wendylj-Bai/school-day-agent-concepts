@@ -8,7 +8,7 @@ Help a student move forward after a practice mistake while keeping parents, teac
 
 ## Plausible recurring problem
 
-A child answers 52 − 27 as 35, subtracting the smaller digit from the larger one in each place instead of regrouping. They may keep trying without knowing why their method fails. A static answer key reveals the result, not the misunderstanding; a parent may not know which explanation to try next. The child loses momentum during a recurring study session. This is a plausible scenario, not measured learning data.
+A child answers 52 − 27 as 35, subtracting the smaller digit from the larger one in each place instead of regrouping. They may keep trying without knowing why their method fails. A static answer key reveals the result, not the misunderstanding; a parent may not know which explanation to try next. The child loses momentum during a recurring study session. The example is illustrative, while the research below documents both the broader mathematics-support problem and this specific error pattern.
 
 ## Problem-to-solution map
 
@@ -75,12 +75,15 @@ Uses fictional learner profiles only - not real childhood student data.
 4. The learner answers 37, so the fixed rules mark it incorrect. Try Another Method sends the Teaching Agent back to a number-line approach (count up from 38: +2 to 40, +20 to 60, +1 to 61, so 23) within the one-retry limit.
 5. The learner answers correctly, then takes a short mock quiz without hints, such as 43 − 19, 70 − 26, 85 − 47, and 58 − 23 (which needs no regrouping). After submission, the system produces a short support summary so a parent can encourage review and a teacher or adviser can guide the next lesson.
 
-## Research validation and evidence limits
+## Problem and adoption evidence
 
-**Current judgment:** the need for additional learning support is well documented, and research supports tutoring as a type of learning support. There is no measured learning benefit yet for this product, how it interprets learner mistakes, or its two-agent design.
+**Current judgment:** the need for additional mathematics support is documented, the subtraction error used in the demo has been observed in research, and students are already using general AI for schoolwork. These findings validate the education problem and existing AI adoption. They do not claim that this particular Study Buddy already improves learning.
 
+- The 2024 Nation's Report Card found that 24% of US fourth-grade students performed below NAEP Basic in mathematics, while 39% performed at or above NAEP Proficient. This is broad national evidence of uneven mathematics performance, not evidence that every student needs an AI tutor.
+- A 2020 Frontiers in Education study of multi-digit subtraction describes the "smaller-from-larger" error used in our demo and notes that it has been observed across educational settings. The study also warns that not every wrong answer represents a misunderstanding; some result from attention slips or weak number-fact knowledge. This directly supports both the demo problem and the agent's rule to ask about the learner's reasoning before labeling the difficulty.
+- A 2014 National Center for Families Learning survey found that 60.1% of parents with children in grades K–8 reported difficulty helping with homework. Among the stated reasons were not understanding the subject matter (33.5%) and being too busy (25.5%). This is older supporting evidence, so it should not be treated as a current estimate.
 - J-PAL's review of experimental PreK–12 tutoring studies reported an overall pooled learning effect of 0.37 standard deviations. That result concerns the tutoring programs studied; it is not an expected effect size for an AI tutor.
-- A 2026 Pew Research Center survey found that 54% of US teens ages 13 to 17 had used AI chatbots for schoolwork, and one in ten said chatbots helped with all or most of their schoolwork. This shows that AI-assisted schoolwork is already common among teens. It does not describe younger children or prove that students are learning from the assistance.
+- A 2026 Pew Research Center survey found that 54% of US teens ages 13 to 17 had used AI chatbots for schoolwork, including about four in ten or more who had used them to solve math problems or research a topic. One in ten said chatbots helped with all or most of their schoolwork. This is strong adoption evidence for teens, but it does not describe younger children or prove learning.
 - A Penn/Wharton experiment with nearly 1,000 high-school mathematics students in Turkey found that general-purpose GPT improved assisted practice but students performed 17% worse than the control group when AI was removed. A teacher-informed, guarded GPT tutor mitigated that harm but did not outperform the control group on the independent exam. This supports hints, safeguards, and checks without assistance; it does not establish effectiveness for US elementary subtraction.
 - Stanford's Tutor CoPilot trial involved more than 700 tutors and 1,000 students. Students whose human tutors used the AI support were 4 percentage points more likely to master math topics. The tool also increased probing questions and reduced generic praise. This supports AI assisting a person who teaches, but it does not test a child using an AI tutor alone at home.
 - Guided AI tutoring already exists. Hints alone are not a meaningful difference. The question to test is whether a tutor that changes among teacher-approved methods after an unsuccessful attempt improves performance on a new problem and produces useful human follow-up.
@@ -93,6 +96,9 @@ Uses fictional learner profiles only - not real childhood student data.
 
 ### Research sources
 
+- [The Nation's Report Card: 2024 Grade 4 Mathematics Results](https://www.nationsreportcard.gov/reports/mathematics/2024/g4_8/?grade=4), 2024.
+- [Frontiers in Education: Evaluating the Characteristics of Diagnostic Items for Bridging Errors in Multi-Digit Subtraction](https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2020.537531/full), 2020.
+- [National Center for Families Learning: 60 Percent of Parents Struggle to Help With Homework](https://familieslearning.org/blog/60-percent-of-parents-struggle-to-help-with-homework-survey-reveals/), 2014.
 - [J-PAL: The Transformative Potential of Tutoring for Pre K–12 Learning Outcomes](https://www.povertyactionlab.org/publication/transformative-potential-tutoring-pre-k-12-learning-outcomes-lessons-randomized), 2020.
 - [Pew Research Center: How Teens Use and View AI](https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/), February 24, 2026.
 - [Knowledge at Wharton: Without Guardrails, Generative AI Can Harm Education](https://knowledge.wharton.upenn.edu/article/without-guardrails-generative-ai-can-harm-education/), August 27, 2024.
