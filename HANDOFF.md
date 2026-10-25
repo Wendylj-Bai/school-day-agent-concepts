@@ -16,6 +16,8 @@ On 2026-10-25, the Study Buddy brief and published concept page were expanded wi
 
 A separate `docs/mentor-review.html` page now presents the mentor-facing order requested for team review: Concept 1 consolidates the Personalized Study Buddy, Teacher's Assistant AI, and StudyLadder contributions; Concept 2 is the Family-School Communication Coordinator. On the owner's instruction, public copies of the two original team PDFs are linked under `docs/team-ideas/`. `docs/mentor-review.md` preserves the same summary offline.
 
+The mentor-review page also includes a compact, source-linked problem-validation snapshot for both directions. Keep the evidence boundaries visible: the citations support the underlying problems and design rationale, not product effectiveness, adoption, or measured impact.
+
 ---
 
 ## 1. Start here (reading order)

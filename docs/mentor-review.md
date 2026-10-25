@@ -66,6 +66,24 @@ Replacing the school's existing communication system, sending unsupervised mass 
 - What evidence should establish frequency and remaining pain after existing school platforms?
 - Is this workflow sufficiently agentic compared with a simpler search or messaging feature?
 
+## Problem-validation snapshot
+
+### Concept 1 · Learning support
+
+- **Mathematics support need:** the 2024 Nation's Report Card found that 24% of US fourth-grade students performed below NAEP Basic in mathematics, while 39% performed at or above NAEP Proficient. This documents uneven mathematics performance, not a universal need for an AI tutor. [Source: Nation's Report Card, 2024](https://www.nationsreportcard.gov/reports/mathematics/2024/g4_8/?grade=4).
+- **Existing student AI use:** a 2026 Pew Research Center survey found that 54% of US teens ages 13–17 had used AI chatbots for schoolwork. This supports the need for appropriate boundaries, but does not prove improved learning. [Source: Pew Research Center, 2026](https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/).
+- **Human-supported AI:** Stanford's Tutor CoPilot trial involved more than 700 tutors and 1,000 students. Students whose human tutors used the AI support were 4 percentage points more likely to master mathematics topics. This supports keeping educators involved; it did not test a child using an AI tutor independently at home. [Source: Stanford National Student Support Accelerator, 2025](https://nssa.stanford.edu/studies/tutor-copilot-human-ai-approach-scaling-real-time-expertise).
+
+**Evidence boundary:** these sources support the learning problem, existing AI adoption, and the value of human participation. They do not establish that the consolidated learning concept improves outcomes.
+
+### Concept 2 · Family-school communication
+
+- **Digital communication friction:** a 2026 peer-reviewed review combined 51 studies of parents' experiences with technology-based school communication. Parents valued speed and convenience but also reported overcommunication, access and cultural barriers, and privacy concerns. [Source: Review of Education, 2026](https://doi.org/10.1002/rev3.70137).
+- **Multiple approved applications:** in a 2025 North American survey, 54% of 58 curriculum leaders reported that their schools used 10–15 officially approved education applications. The modest, vendor-funded sample makes this supporting rather than conclusive evidence. [Source: Cornerstone and Edsby, 2025](https://cornerstonepr.net/wp-content/uploads/2025/03/AppOverloadReport_bg.pdf.pdf).
+- **Recurring teacher workload:** OECD TALIS 2024 results show that full-time lower-secondary teachers spend an average of 1.8 hours per week communicating and cooperating with parents or guardians. The international average may not describe every US school. [Source: OECD TALIS 2024](https://www.oecd.org/en/publications/results-from-talis-2024_90df6235-en/full-report/professional-relationships-in-school-communities_b6ddef33.html).
+
+**Evidence boundary:** these sources establish that communication friction, fragmented tools, and teacher communication work exist. They do not prove demand for this exact coordinator or that it will outperform improvements to existing school systems.
+
 ## Decision requested
 
 Which concept gives the team the clearest four-week path to a safe, testable, and defensible agentic AI demonstration? After mentor guidance, the team will choose one concept, confirm the smallest working scope, and assign named owners and deadlines.
