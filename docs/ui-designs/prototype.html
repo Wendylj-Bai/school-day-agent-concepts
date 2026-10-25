@@ -56,18 +56,18 @@
   </style>
 </head>
 <body>
-  <header class="topbar" id="topbar">
-    <div class="brand"><div class="brand-mark" id="brandMark" aria-hidden="true">OC</div><span id="brandText">Oak Creek Elementary · Family Coordinator</span></div>
+  <header class="topbar buddy" id="topbar">
+    <div class="brand"><div class="brand-mark" id="brandMark" aria-hidden="true">SB</div><span id="brandText">Study Buddy · Concept 01</span></div>
     <a class="back" href="index.html">← UI gallery</a>
   </header>
-  <div class="notice"><strong>UI design navigator:</strong> exact approved mockups with fictional data. These are not functioning products, compliance certifications, or school endorsements.</div>
+  <div class="notice"><strong>UI design navigator:</strong> exact approved mockups with fictional data. Study Buddy is now Concept 1; its earlier desktop mockups may still show the former “Concept 02” label inside the image. These are not functioning products, compliance certifications, or school endorsements.</div>
 
   <nav class="controls" aria-label="UI screen controls">
     <div class="control-row">
       <div class="control-group" aria-label="Choose concept">
         <span class="control-label">Concept</span>
-        <button class="control active" type="button" data-concept="school">01 Family-School</button>
-        <button class="control" type="button" data-concept="buddy">02 Study Buddy</button>
+        <button class="control active" type="button" data-concept="buddy">01 Study Buddy</button>
+        <button class="control" type="button" data-concept="school">02 Family-School</button>
       </div>
       <div class="control-group" id="screenControls" aria-label="Choose screen"></div>
       <div class="control-group" aria-label="Choose device">
@@ -80,7 +80,7 @@
 
   <main>
     <section class="screen-meta">
-      <div><div class="eyebrow" id="conceptLabel">Concept 01 · Family-School Communication Coordinator</div><h1 id="screenTitle">Parent dashboard</h1><p id="screenDescription">A parent sees a verified schedule conflict and prepares a teacher clarification.</p></div>
+      <div><div class="eyebrow" id="conceptLabel">Concept 01 · Personalized Study Buddy</div><h1 id="screenTitle">Learner home</h1><p id="screenDescription">The learner chooses guided practice or a no-hint mock quiz challenge.</p></div>
     </section>
     <section class="viewport" aria-live="polite">
       <div class="screen-frame" id="screenFrame"><div class="loading">Loading design...</div></div>
@@ -91,7 +91,7 @@
   <script>
     const designs = {
       school: {
-        label:'Concept 01 · Family-School Communication Coordinator', brand:'Oak Creek Elementary · Family Coordinator', mark:'OC',
+        label:'Concept 02 · Family-School Communication Coordinator', brand:'Oak Creek Elementary · Family Coordinator', mark:'OC',
         screens:{
           parent:{ label:'Parent', title:'Parent dashboard', description:'A parent sees a verified schedule conflict and prepares a teacher clarification.', desktop:'assets/family-school/parent-dashboard.png', phone:'assets/family-school/parent-mobile.png' },
           teacher:{ label:'Teacher', title:'Teacher dashboard', description:'A teacher sees grouped family questions and reviews one class-wide update.', desktop:'assets/family-school/teacher-dashboard.png', phone:'assets/family-school/teacher-mobile.png' },
@@ -99,7 +99,7 @@
         }
       },
       buddy: {
-        label:'Concept 02 · Personalized Study Buddy', brand:'Study Buddy · Concept 02', mark:'SB',
+        label:'Concept 01 · Personalized Study Buddy', brand:'Study Buddy · Concept 01', mark:'SB',
         screens:{
           home:{ label:'Home', title:'Learner home', description:'The learner chooses guided practice or a no-hint mock quiz challenge.', desktop:'assets/study-buddy/desktop-home.png', phone:'assets/study-buddy/phone-home.png' },
           practice:{ label:'Practice', title:'Guided regrouping practice', description:'The learner trades one ten, uses teacher-approved place-value blocks, and checks a new step.', desktop:'assets/study-buddy/desktop-practice.png', phone:'assets/study-buddy/phone-practice.png' },
@@ -107,7 +107,7 @@
         }
       }
     };
-    const state = { concept:'school', screen:'parent', device:'desktop' };
+    const state = { concept:'buddy', screen:'home', device:'desktop' };
     const screenControls = document.getElementById('screenControls');
     const screenFrame = document.getElementById('screenFrame');
     function firstScreen(concept) { return Object.keys(designs[concept].screens)[0]; }
