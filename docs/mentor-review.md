@@ -1,8 +1,8 @@
-# Team 4 Mentor Review · Two Agentic AI Directions
+# Team 4 Mentor Review: Two Agentic AI Directions
 
 Short review prepared for mentor guidance. These are working hypotheses, not final team selections, implemented products, or claims of measured impact.
 
-## Concept 1 · School-Guided Learning Support
+## Concept 1: School-Guided Learning Support
 
 ### The shared problem
 
@@ -11,8 +11,8 @@ Students already use general AI and other resources for schoolwork, but support 
 ### Three team contributions being consolidated
 
 1. **Personalized Study Buddy** - reviews a practice attempt, chooses a teacher-approved hint, asks a fresh question, adjusts once when the learner remains stuck, and uses a no-hint check before producing role-appropriate progress summaries. [Review the detailed public brief](concepts/study-buddy.html).
-2. **Teacher's Assistant AI** - lets a teacher set the acceptable AI-use level for an assignment, coaches rather than rewrites, records how AI was used, and leaves every academic decision with the teacher. [View the original team submission (PDF)](team-ideas/teachers-assistant-ai.pdf).
-3. **StudyLadder** - proposes an exam-preparation planner that prioritizes free campus support and study groups before paid tutoring, with later possibilities for resource matching and aggregate demand insights. [View the original team submission (PDF)](team-ideas/studyladder-project-plan.pdf).
+2. **Teacher's Assistant AI** - lets a teacher set an AI-use level and upload a rubric. Three proposed agents coach without rewriting, record assignment-specific drafts and AI interactions, and flag process-to-final-work differences for teacher review. The teacher makes every final decision. [View the original team submission (PDF)](team-ideas/teachers-assistant-ai.pdf).
+3. **StudyLadder** - starts with a student's exam date, goal, availability, and budget. It proposes a study plan that checks free campus support first, study groups second, and paid tutors last. The broader plan also includes tutor matching, tutor-reviewed live quizzes, and anonymized demand insights for campuses. [View the original team submission (PDF)](team-ideas/studyladder-project-plan.pdf).
 
 ### Consolidated four-week demonstration
 
@@ -29,7 +29,7 @@ Tutor marketplace, payments, campus-wide demand forecasting, full parent and tea
 - Is the teacher-boundary and progress-accountability layer more valuable than a simpler tutoring flow?
 - What evidence or user validation should we gather first?
 
-## Concept 2 · Family-School Communication Coordinator
+## Concept 2: Family-School Communication Coordinator
 
 ### The problem
 
@@ -68,18 +68,18 @@ Replacing the school's existing communication system, sending unsupervised mass 
 
 ## Problem-validation snapshot
 
-### Concept 1 · Learning support
+### Concept 1: Learning support
 
 - **Mathematics support need:** the 2024 Nation's Report Card found that 24% of US fourth-grade students performed below NAEP Basic in mathematics, while 39% performed at or above NAEP Proficient. This documents uneven mathematics performance, not a universal need for an AI tutor. [Source: Nation's Report Card, 2024](https://www.nationsreportcard.gov/reports/mathematics/2024/g4_8/?grade=4).
-- **Existing student AI use:** a 2026 Pew Research Center survey found that 54% of US teens ages 13–17 had used AI chatbots for schoolwork. This supports the need for appropriate boundaries, but does not prove improved learning. [Source: Pew Research Center, 2026](https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/).
+- **Existing student AI use:** a 2026 Pew Research Center survey found that 54% of US teens ages 13 to 17 had used AI chatbots for schoolwork. This supports the need for appropriate boundaries, but does not prove improved learning. [Source: Pew Research Center, 2026](https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/).
 - **Human-supported AI:** Stanford's Tutor CoPilot trial involved more than 700 tutors and 1,000 students. Students whose human tutors used the AI support were 4 percentage points more likely to master mathematics topics. This supports keeping educators involved; it did not test a child using an AI tutor independently at home. [Source: Stanford National Student Support Accelerator, 2025](https://nssa.stanford.edu/studies/tutor-copilot-human-ai-approach-scaling-real-time-expertise).
 
 **Evidence boundary:** these sources support the learning problem, existing AI adoption, and the value of human participation. They do not establish that the consolidated learning concept improves outcomes.
 
-### Concept 2 · Family-school communication
+### Concept 2: Family-school communication
 
 - **Digital communication friction:** a 2026 peer-reviewed review combined 51 studies of parents' experiences with technology-based school communication. Parents valued speed and convenience but also reported overcommunication, access and cultural barriers, and privacy concerns. [Source: Review of Education, 2026](https://doi.org/10.1002/rev3.70137).
-- **Multiple approved applications:** in a 2025 North American survey, 54% of 58 curriculum leaders reported that their schools used 10–15 officially approved education applications. The modest, vendor-funded sample makes this supporting rather than conclusive evidence. [Source: Cornerstone and Edsby, 2025](https://cornerstonepr.net/wp-content/uploads/2025/03/AppOverloadReport_bg.pdf.pdf).
+- **Multiple approved applications:** in a 2025 North American survey, 54% of 58 curriculum leaders reported that their schools used 10 to 15 officially approved education applications. The modest, vendor-funded sample makes this supporting rather than conclusive evidence. [Source: Cornerstone and Edsby, 2025](https://cornerstonepr.net/wp-content/uploads/2025/03/AppOverloadReport_bg.pdf.pdf).
 - **Recurring teacher workload:** OECD TALIS 2024 results show that full-time lower-secondary teachers spend an average of 1.8 hours per week communicating and cooperating with parents or guardians. The international average may not describe every US school. [Source: OECD TALIS 2024](https://www.oecd.org/en/publications/results-from-talis-2024_90df6235-en/full-report/professional-relationships-in-school-communities_b6ddef33.html).
 
 **Evidence boundary:** these sources establish that communication friction, fragmented tools, and teacher communication work exist. They do not prove demand for this exact coordinator or that it will outperform improvements to existing school systems.
