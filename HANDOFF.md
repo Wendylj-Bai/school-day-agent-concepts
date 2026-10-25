@@ -14,6 +14,8 @@
 
 On 2026-10-25, the Study Buddy brief and published concept page were expanded with a proposed shared-accountability feature: observable milestones, role-appropriate learner/parent/educator views, teacher-confirmed mastery, and explicit privacy boundaries. This remains a concept proposal, not an implemented portal or validated learning outcome.
 
+A separate `docs/mentor-review.html` page now presents the mentor-facing order requested for team review: Concept 1 consolidates the Personalized Study Buddy, Teacher's Assistant AI, and StudyLadder contributions; Concept 2 is the Family-School Communication Coordinator. The teammate PDFs are referenced as internal team submissions but are not copied into the public site without contributor permission. `docs/mentor-review.md` preserves the same summary offline.
+
 ---
 
 ## 1. Start here (reading order)

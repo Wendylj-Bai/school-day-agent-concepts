@@ -16,6 +16,7 @@ Two exploratory Education proposals for Data Science Varsity 2026, chosen to pre
 
 ## Links
 
+- [Short mentor-review page](docs/mentor-review.html) · [Markdown source](docs/mentor-review.md)
 - [Concept homepage (HTML)](docs/index.html)
 - [UI concept gallery](docs/ui-designs/index.html) and [desktop/mobile screen navigator](docs/ui-designs/prototype.html) - fictional, simulated design concepts; not implemented products
 - [Family-School Communication Coordinator - Markdown brief](docs/concepts/family-school.md) · [HTML brief](docs/concepts/family-school.html)
