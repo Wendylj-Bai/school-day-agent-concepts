@@ -50,7 +50,7 @@ A fictional parent receives two school notices with different event times. The a
 - **Small, visible demonstration:** one parent question, two conflicting notices, one clarification request, and one educator-confirmed answer form a complete end-to-end story.
 - **Practical build scope:** the demonstration can use fictional notices and fixed permissions without integrating real student records or replacing an existing school platform.
 - **Defensible agentic behavior:** the next action depends on the retrieved evidence. The agent can answer, identify uncertainty, or request human clarification while fixed application rules control access and privacy.
-- **Lower delivery risk:** compared with a full tutoring, planning, marketplace, and analytics system, this concept has fewer screens, data entities, integrations, and evaluation problems.
+- **Clear four-week delivery path:** the team can build and test the core communication loop first, then treat broader integrations and communication channels as future possibilities.
 - **Human authority remains clear:** educators confirm unresolved information, and the agent never invents school policy or send unapproved decisions.
 
 **Evidence boundary:** current research supports the underlying communication problem. The team still needs current parent and educator feedback to establish frequency, priority, adoption, and whether this proposed workflow is preferable to improving existing tools.
