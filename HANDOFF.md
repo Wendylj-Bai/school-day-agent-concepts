@@ -6,11 +6,13 @@
 
 | | |
 |---|---|
-| Last updated | 2026-10-22 |
+| Last updated | 2026-10-25 |
 | Owner / approver | Wendy (repository owner). Do not commit, push, or publish without her approval. |
 | Status | **Audit fixes executed on 2026-10-22.** The owner approved D1–D3 = A. All findings F0–F8 are resolved (see section 6), and the changes are committed and pushed to `main`. |
 | Live site | https://wendylj-bai.github.io/school-day-agent-concepts/index.html (published from `docs/` on `main`) |
 | Next step for a new contributor | Nothing from this audit is still open. Read sections 1–4 before changing content, and keep the vocabulary in section 4. |
+
+On 2026-10-25, the Study Buddy brief and published concept page were expanded with a proposed shared-accountability feature: observable milestones, role-appropriate learner/parent/educator views, teacher-confirmed mastery, and explicit privacy boundaries. This remains a concept proposal, not an implemented portal or validated learning outcome.
 
 ---
 

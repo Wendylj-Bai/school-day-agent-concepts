@@ -4,7 +4,7 @@ Working hypothesis for team discussion, not proven learning impact or a built pr
 
 ## Value proposition (one sentence)
 
-Help a student move forward after a practice mistake while keeping parents, teachers, and advisers involved in encouragement, content guidance, and follow-up.
+Help a student move forward after a practice mistake while giving the student, authorized parents, and educators an appropriate view of progress, support needs, and next steps.
 
 ## Plausible recurring problem
 
@@ -19,9 +19,17 @@ A child answers 52 − 27 as 35, subtracting the smaller digit from the larger o
 
 ## Intended value
 
-- **Student:** get a hint matched to the attempt, practice independently, and ask for help without receiving the answer.
-- **Parent:** see a concise, authorized progress and support summary, then encourage practice or help arrange follow-up.
-- **Teacher and adviser:** approve learning activities, guide lesson review, and receive a useful signal when persistent difficulty needs human attention.
+- **Student:** get a hint matched to the attempt, practice independently, see completed milestones and the next task, and ask for help without receiving the answer.
+- **Parent:** see a concise, authorized progress and support summary, then encourage practice or help arrange follow-up without seeing every mistake or private conversation.
+- **Teacher and adviser:** approve learning activities, review academic progress and evidence, guide lesson review, and decide whether completed practice demonstrates mastery.
+
+## Shared accountability and progress check-in
+
+The Study Buddy adds a limited accountability loop among the learner, authorized parents, and educators. It records observable practice milestones such as the assigned goal, activities started or completed, topics practiced, support requested, and the next planned activity. A simple status can show **not started**, **in progress**, **needs support**, **practice completed**, or **teacher reviewed**.
+
+The views are intentionally different. The learner sees the detailed plan, feedback, and next task. A teacher or adviser can review academic evidence, recurring difficulty, and items needing follow-up. An authorized parent sees a high-level summary such as `3 of 5 activities completed`, `on track`, or `support requested`. Parents do not automatically receive the learner's full AI conversation, every mistake, or private educator notes.
+
+Finishing an activity is not the same as mastering a skill. The system may report that practice was completed or that a no-hint check was passed, but only an authorized educator can confirm curriculum mastery or make an academic decision. A real deployment would also require age-appropriate consent, school policy, and role-based access; the first prototype uses fictional learners and fixed demo permissions.
 
 ## What the AI agents would do
 
@@ -33,7 +41,7 @@ A fixed quiz cannot change its teaching method after an unsuccessful explanation
 
 The workflow diagram demonstrates the selected seven-minute use case, not every possible app scenario.
 
-Normal: learner attempt → answer check → identify a possible learning difficulty → choose an approved activity → hint → new practice question → new answer check → mock quiz without hints → support summary → next practice steps.
+Normal: learner attempt → answer check → identify a possible learning difficulty → choose an approved activity → hint → new practice question → new answer check → mock quiz without hints → role-appropriate progress summary → next practice steps or adult follow-up.
 
 Exception: if the new answer is still incorrect, Try Another Method sends the Teaching Agent back with one other approved approach. When the retry limit is reached, it asks for human help. The diagram shows this alternative path, not an automatic diagnosis of a child.
 
@@ -51,7 +59,7 @@ This mode is for preparation and formative practice only. It must not provide he
 2. Fixed answer rules check every response, both the first attempt and each new practice answer.
 3. The Learning Review Agent records a possible learning difficulty supported by the attempts, not a diagnosis or unofficial grade.
 4. The Teaching Agent selects an approved hint or activity and asks a different practice question, which fixed rules check again.
-5. If the new answer is still incorrect, the Try Another Method step sends the Teaching Agent back with one different approved method. Once the learner answers correctly, a short mock quiz without hints checks whether they can work independently. After the mock quiz, or when the retry limit is reached, the system prepares a short summary for an authorized parent, teacher, or adviser, who decides the appropriate follow-up.
+5. If the new answer is still incorrect, the Try Another Method step sends the Teaching Agent back with one different approved method. Once the learner answers correctly, a short mock quiz without hints checks whether they can work independently. After the mock quiz, or when the retry limit is reached, the system updates observable milestones and prepares role-appropriate summaries. The learner sees the next task, an authorized parent sees a high-level progress signal, and the teacher or adviser sees the academic evidence and decides the appropriate follow-up.
 
 The agents choose explanations and next steps. Application code controls correctness, retries, approved content, and authorized sharing.
 
@@ -62,7 +70,7 @@ None of these technical options has been built or connected yet. They are sugges
 - **Two limited roles** - a Learning Review Agent records a possible learning difficulty and the next practice goal; a Teaching Agent selects an approved method and a new question. Keep two agents only if testing shows that they work better than one simpler flow.
 - **LangGraph (possible workflow manager)** - could manage the steps, saved practice information, retry limit, and handoff to an adult.
 - **Local MCP tools (controlled connections)** - could give the agents limited access to fictional exercises through developer tools such as `get_practice_activity`, `get_visual_hint`, and `check_practice_answer`. Fixed rules check the answer; the agent chooses which approved activity to use next. It gives hints, not homework answers.
-- **Application-enforced boundaries** - the app/server controls approved content, session length, retries, answer leakage, and what progress information each adult may view. Parents and educators, not the agent, make educational decisions.
+- **Application-enforced boundaries** - the app/server controls approved content, session length, retries, answer leakage, and what progress information each person may view. The first prototype needs only a learner view and one fictional authorized-adult view; a full parent portal is outside scope. Educators, not the agent, confirm mastery and make academic decisions.
 - **Base44 (optional screen builder)** - could create a simple learner screen showing the place-value or number-line visual and next practice steps.
 - **Antigravity (development tool)** - can help us build and test the prototype; it would not be the tutor used by students.
 - **ArgosX** - run the required security scan on the eventual build. Use fictional learner profiles, test answer leakage and retry limits, and log the choices.
@@ -75,7 +83,7 @@ Uses fictional learner profiles only - not real childhood student data.
 2. Fixed answer rules mark it incorrect. The Learning Review Agent records a possible regrouping difficulty and asks how the learner got the 5 in the ones place before labeling it.
 3. The Teaching Agent selects a teacher-approved place-value activity (trade one ten for ten ones), then asks a different check question, 61 − 38, without revealing the answer.
 4. The learner answers 37, so the fixed rules mark it incorrect. Try Another Method sends the Teaching Agent back to a number-line approach (count up from 38: +2 to 40, +20 to 60, +1 to 61, so 23) within the one-retry limit.
-5. The learner answers correctly, then takes a short mock quiz without hints, such as 43 − 19, 70 − 26, 85 − 47, and 58 − 23 (which needs no regrouping). After submission, the system produces a short support summary so a parent can encourage review and a teacher or adviser can guide the next lesson.
+5. The learner answers correctly, then takes a short mock quiz without hints, such as 43 − 19, 70 − 26, 85 − 47, and 58 − 23 (which needs no regrouping). After submission, the learner view marks the practice activity complete and shows the next task. A fictional parent view shows a high-level `3 of 5 activities completed` signal, while the teacher view shows the attempts, support used, and mock-quiz result for review. The system does not declare mastery.
 
 ## Problem and adoption evidence
 
@@ -87,7 +95,6 @@ Uses fictional learner profiles only - not real childhood student data.
 - J-PAL's review of experimental PreK–12 tutoring studies reported an overall pooled learning effect of 0.37 standard deviations. That result concerns the tutoring programs studied; it is not an expected effect size for an AI tutor.
 - A 2026 Pew Research Center survey found that 54% of US teens ages 13 to 17 had used AI chatbots for schoolwork, including about four in ten or more who had used them to solve math problems or research a topic. One in ten said chatbots helped with all or most of their schoolwork. This is strong adoption evidence for teens, but it does not describe younger children or prove learning.
 - A Penn/Wharton experiment with nearly 1,000 high-school mathematics students in Turkey found that general-purpose GPT improved assisted practice but students performed 17% worse than the control group when AI was removed. A teacher-informed, guarded GPT tutor mitigated that harm but did not outperform the control group on the independent exam. This supports hints, safeguards, and checks without assistance; it does not establish effectiveness for US elementary subtraction.
-- Stanford's Tutor CoPilot trial involved more than 700 tutors and 1,000 students. Students whose human tutors used the AI support were 4 percentage points more likely to master math topics. The tool also increased probing questions and reduced generic praise. This supports AI assisting a person who teaches, but it does not test a child using an AI tutor alone at home.
 - Guided AI tutoring already exists. Hints alone are not a meaningful difference. The question to test is whether a tutor that changes among teacher-approved methods after an unsuccessful attempt improves performance on a new problem and produces useful human follow-up.
 
 **Smallest credible test:** use one skill (two-digit subtraction with regrouping), fixed answer checks, two teacher-approved teaching methods, and a clear retry limit. Compare the adjustable workflow with one fixed approved explanation using different but comparable questions before support, immediately afterward, and later without hints.
@@ -108,11 +115,11 @@ Uses fictional learner profiles only - not real childhood student data.
 
 ## Measures
 
-Success on different post-hint and mock-test questions without hints, wrong answers revealed by mistake, appropriate teaching-method changes, retry limits followed, useful support signals, and timely human follow-up. Compare against a fixed explanation using the same fictional mistakes; do not claim learning outcomes from a scripted demo.
+Success on different post-hint and mock-test questions without hints, wrong answers revealed by mistake, appropriate teaching-method changes, retry limits followed, accurate milestone updates, role-appropriate information sharing, useful support signals, and timely human follow-up. Compare against a fixed explanation using the same fictional mistakes; do not claim learning outcomes from a scripted demo.
 
 ## Assumptions / questions
 
-Target age and curriculum, how to distinguish practice from assessed work, what information is useful without becoming surveillance, how to test genuine learning, and what student-data safeguards a real deployment would require.
+Target age and curriculum, how to distinguish practice from assessed work, which milestones students and adults find useful, who authorizes parent access, what information is useful without becoming surveillance, how to test genuine learning, and what student-data safeguards a real deployment would require.
 
 ## Links
 
