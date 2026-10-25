@@ -66,7 +66,9 @@ Replacing the school's existing communication system, sending unsupervised mass 
 - What evidence should establish frequency and remaining pain after existing school platforms?
 - Is this workflow sufficiently agentic compared with a simpler search or messaging feature?
 
-## Problem-validation snapshot
+## Evidence so far
+
+These sources show that the problems exist. They do not prove that either idea will work or that people will use it.
 
 ### Concept 1: Learning support
 
