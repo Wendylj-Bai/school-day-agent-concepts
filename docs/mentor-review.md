@@ -11,8 +11,8 @@ Students already use general AI and other resources for schoolwork, but support 
 ### Three team contributions being consolidated
 
 1. **Personalized Study Buddy** - reviews a practice attempt, chooses a teacher-approved hint, asks a fresh question, adjusts once when the learner remains stuck, and uses a no-hint check before producing role-appropriate progress summaries. [Review the detailed public brief](concepts/study-buddy.html).
-2. **Teacher's Assistant AI** - lets a teacher set the acceptable AI-use level for an assignment, coaches rather than rewrites, records how AI was used, and leaves every academic decision with the teacher. The original one-page submission remains in the team's shared files pending permission for public distribution.
-3. **StudyLadder** - proposes an exam-preparation planner that prioritizes free campus support and study groups before paid tutoring, with later possibilities for resource matching and aggregate demand insights. The original project-plan PDF remains in the team's shared files pending permission for public distribution.
+2. **Teacher's Assistant AI** - lets a teacher set the acceptable AI-use level for an assignment, coaches rather than rewrites, records how AI was used, and leaves every academic decision with the teacher. [View the original team submission (PDF)](team-ideas/teachers-assistant-ai.pdf).
+3. **StudyLadder** - proposes an exam-preparation planner that prioritizes free campus support and study groups before paid tutoring, with later possibilities for resource matching and aggregate demand insights. [View the original team submission (PDF)](team-ideas/studyladder-project-plan.pdf).
 
 ### Consolidated four-week demonstration
 
@@ -43,6 +43,18 @@ The system checks the family's permission, retrieves only approved school inform
 
 A fictional parent receives two school notices with different event times. The agent retrieves the approved notices, identifies the conflict, explains what is confirmed, cites both sources, and sends the unresolved question to an educator. After the educator confirms the correct information, the family receives a clear response and the clarification is recorded.
 
+### Why this is a strong four-week candidate
+
+- **Documented problem context:** published evidence and lived school-community experience support that families and educators face fragmented communication, platform overload, unclear information, and response pressure. This validates the problem context, not demand for our exact solution.
+- **Clear problem-to-solution fit:** the proposed agent retrieves approved information, reconciles sources, explains what is confirmed, and asks an educator when the evidence is incomplete or conflicting.
+- **Small, visible demonstration:** one parent question, two conflicting notices, one clarification request, and one educator-confirmed answer form a complete end-to-end story.
+- **Practical build scope:** the demonstration can use fictional notices and fixed permissions without integrating real student records or replacing an existing school platform.
+- **Defensible agentic behavior:** the next action depends on the retrieved evidence. The agent can answer, identify uncertainty, or request human clarification while fixed application rules control access and privacy.
+- **Lower delivery risk:** compared with a full tutoring, planning, marketplace, and analytics system, this concept has fewer screens, data entities, integrations, and evaluation problems.
+- **Human authority remains clear:** educators confirm unresolved information, and the agent never invents school policy or send unapproved decisions.
+
+**Evidence boundary:** current research supports the underlying communication problem. The team still needs current parent and educator feedback to establish frequency, priority, adoption, and whether this proposed workflow is preferable to improving existing tools.
+
 ### Keep outside the first prototype
 
 Replacing the school's existing communication system, sending unsupervised mass messages, integrating real student records, collecting real family data, or attempting every communication channel at once.
@@ -57,4 +69,3 @@ Replacing the school's existing communication system, sending unsupervised mass 
 ## Decision requested
 
 Which concept gives the team the clearest four-week path to a safe, testable, and defensible agentic AI demonstration? After mentor guidance, the team will choose one concept, confirm the smallest working scope, and assign named owners and deadlines.
-
