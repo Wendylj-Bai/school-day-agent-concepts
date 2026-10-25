@@ -6,17 +6,17 @@ Short review prepared for mentor guidance. These are working hypotheses, not fin
 
 ### The shared problem
 
-Students already use general AI and other resources for schoolwork, but support may not follow the teacher's curriculum, may reveal answers instead of teaching, and may give parents and educators little appropriate visibility into the learner's progress. Students may also struggle to plan for an exam or find available academic support.
+Students already use general AI and other resources for schoolwork, but support may not follow the teacher's curriculum, may reveal answers instead of teaching, and may give parents and educators little appropriate visibility into the learner's progress. Students may also struggle to plan for an exam or find available academic support. The opportunity is to create a shared accountability partnership without turning progress monitoring into surveillance.
 
 ### Three team contributions being consolidated
 
-1. **Personalized Study Buddy** - reviews a practice attempt, chooses a teacher-approved hint, asks a fresh question, adjusts once when the learner remains stuck, and uses a no-hint check before producing role-appropriate progress summaries. [Review the detailed public brief](concepts/study-buddy.html).
+1. **Personalized Study Buddy** - reviews a practice attempt, chooses a teacher-approved hint, asks a fresh question, adjusts once when the learner remains stuck, and uses a no-hint check before giving the student, authorized parent, and teacher an appropriate next step. The learner owns the practice, the parent supports routines and encouragement, and the teacher controls learning goals and follow-up. [Review the detailed public brief](concepts/study-buddy.html).
 2. **Teacher's Assistant AI** - lets a teacher set an AI-use level and upload a rubric. Three proposed agents coach without rewriting, record assignment-specific drafts and AI interactions, and flag process-to-final-work differences for teacher review. The teacher makes every final decision. [View the original team submission (PDF)](team-ideas/teachers-assistant-ai.pdf).
 3. **StudyLadder** - starts with a student's exam date, goal, availability, and budget. It proposes a study plan that checks free campus support first, study groups second, and paid tutors last. The broader plan also includes tutor matching, tutor-reviewed live quizzes, and anonymized demand insights for campuses. [View the original team submission (PDF)](team-ideas/studyladder-project-plan.pdf).
 
 ### Consolidated four-week demonstration
 
-A teacher sets one approved learning goal, content source, and AI-use boundary. A fictional student enters an exam or assignment goal, receives a short plan, and works through one guided practice activity. The agent gives questions, explanations, and hints without completing the work. A no-hint check records observable progress. The learner sees the next task, an authorized parent sees a high-level status, and the teacher sees the learning evidence and decides whether follow-up or mastery confirmation is appropriate.
+A teacher sets one approved learning goal, content source, and AI-use boundary. A fictional student enters an exam or assignment goal, receives a short plan, and works through one guided practice activity. The agent gives questions, explanations, and hints without completing the work. A no-hint check records observable progress. The learner sees the next task, an authorized parent receives a high-level status for encouragement and routine support, and the teacher sees the learning evidence and decides whether follow-up or mastery confirmation is appropriate. This creates a bounded student-parent-teacher accountability check-in rather than continuous monitoring.
 
 ### Keep outside the first prototype
 
