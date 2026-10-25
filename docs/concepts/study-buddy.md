@@ -4,7 +4,7 @@ Working hypothesis for team discussion, not proven learning impact or a built pr
 
 ## Value proposition (one sentence)
 
-Help a student move forward after a practice mistake while giving the student, authorized parents, and educators an appropriate view of progress, support needs, and next steps.
+Turn teacher-approved assignments, lesson reviews, and mock quizzes into a guided learning and accountability loop: the student receives support and completes the work, an authorized parent sees an appropriate progress signal, and the teacher retains control of learning goals and academic follow-up.
 
 ## Plausible recurring problem
 
@@ -25,11 +25,21 @@ A child answers 52 − 27 as 35, subtracting the smaller digit from the larger o
 
 ## Shared accountability and progress check-in
 
-The Study Buddy adds a limited accountability loop among the learner, authorized parents, and educators. It records observable practice milestones such as the assigned goal, activities started or completed, topics practiced, support requested, and the next planned activity. A simple status can show **not started**, **in progress**, **needs support**, **practice completed**, or **teacher reviewed**.
+The Study Buddy is more than a tutoring chat. It adds a limited accountability loop among the learner, authorized parents, and educators. Each teacher-approved take-home assignment, lesson review, or mock quiz has a visible progress record. The system records observable milestones such as the assigned goal, activities started or completed, topics practiced, independent checks, support requested, and the next planned activity.
 
-The views are intentionally different. The learner sees the detailed plan, feedback, and next task. A teacher or adviser can review academic evidence, recurring difficulty, and items needing follow-up. An authorized parent sees a high-level summary such as `3 of 5 activities completed`, `on track`, or `support requested`. Parents do not automatically receive the learner's full AI conversation, every mistake, or private educator notes.
+### Suggested accomplishment levels
 
-Finishing an activity is not the same as mastering a skill. The system may report that practice was completed or that a no-hint check was passed, but only an authorized educator can confirm curriculum mastery or make an academic decision. A real deployment would also require age-appropriate consent, school policy, and role-based access; the first prototype uses fictional learners and fixed demo permissions.
+1. **Assigned** - the teacher-approved activity and expected date are visible.
+2. **Started** - the learner has begun the activity.
+3. **Guided practice completed** - the learner finished the activity with recorded hints or approved support.
+4. **Independent check completed** - the learner attempted a fresh question or mock quiz without hints.
+5. **Teacher reviewed** - the teacher reviewed the evidence and selected the next step: continue, revisit, or confirm mastery.
+
+**Needs support** can appear at any level when the learner reaches the retry limit, repeatedly struggles with the same skill, or asks for human help. These levels describe progress through the learning process; they are not grades and do not allow the AI to declare mastery.
+
+The views are intentionally different. The learner sees the detailed plan, feedback, accomplishment level, and next task. A teacher or adviser can review academic evidence, support used, independent-check results, recurring difficulty, and items needing follow-up. An authorized parent sees a high-level summary such as `3 of 5 activities completed`, `independent check completed`, `on track`, or `support requested`, plus a practical action such as encouraging the next study session. Parents do not automatically receive the learner's full AI conversation, every mistake, or private educator notes.
+
+Finishing an activity is not the same as mastering a skill. The tracker reports what was attempted, completed, or independently checked. Only an authorized educator can confirm curriculum mastery or make an academic decision. This keeps the model human-supervised: AI assists, people supervise, and the learner still does the work. A real deployment would also require age-appropriate consent, school policy, and role-based access; the first prototype uses fictional learners and fixed demo permissions.
 
 ## What the AI agents would do
 

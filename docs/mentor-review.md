@@ -6,7 +6,7 @@ Short review prepared for mentor guidance. These are working hypotheses, not fin
 
 ### The shared problem
 
-Students already use general AI and other resources for schoolwork, but support may not follow the teacher's curriculum, may reveal answers instead of teaching, and may give parents and educators little appropriate visibility into the learner's progress. Students may also struggle to plan for an exam or find available academic support. The opportunity is to create a shared accountability partnership without turning progress monitoring into surveillance.
+Students already use general AI and other resources for schoolwork, but support may not follow the teacher's curriculum, may reveal answers instead of teaching, and may give parents and educators little appropriate visibility into the learner's progress. Students may also struggle to plan for an exam or find available academic support. The opportunity is not merely another AI tutor. It is a human-supervised learning and accountability loop that connects teacher-approved assignments, lesson reviews, and mock quizzes to useful student, parent, and teacher follow-up without becoming surveillance.
 
 ### Three team contributions being consolidated
 
@@ -16,7 +16,7 @@ Students already use general AI and other resources for schoolwork, but support 
 
 ### Consolidated four-week demonstration
 
-A teacher sets one approved learning goal, content source, and AI-use boundary. A fictional student enters an exam or assignment goal, receives a short plan, and works through one guided practice activity. The agent gives questions, explanations, and hints without completing the work. A no-hint check records observable progress. The learner sees the next task, an authorized parent receives a high-level status for encouragement and routine support, and the teacher sees the learning evidence and decides whether follow-up or mastery confirmation is appropriate. This creates a bounded student-parent-teacher accountability check-in rather than continuous monitoring.
+A teacher sets one approved learning goal, content source, and AI-use boundary. A fictional student enters an exam or assignment goal, receives a short plan, and works through one guided practice activity. The agent gives questions, explanations, and hints without completing the work. The activity moves through visible accomplishment levels: **assigned, started, guided practice completed, independent check completed, and teacher reviewed**. **Needs support** can appear whenever the learner reaches a limit or asks for help. The learner sees the next task, an authorized parent receives a high-level status and practical support action, and the teacher sees the learning evidence and chooses whether the learner should continue, revisit the skill, or receive mastery confirmation. AI assists, people supervise, and the learner still does the work.
 
 ### Keep outside the first prototype
 
