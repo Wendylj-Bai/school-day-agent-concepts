@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="description" content="Two university research-operations concepts evaluated against the mentor's five-point framework.">
+  <title>University Research Operations | Two-Concept Pitch</title>
+  <style>
+    :root{--navy:#10233f;--blue:#18577a;--teal:#15776f;--mint:#dff1ec;--gold:#e1a33c;--paper:#f5f1e8;--white:#fffdf8;--ink:#172536;--muted:#607080;--line:rgba(23,37,54,.16);--shadow:0 22px 60px rgba(16,35,63,.14)}
+    *{box-sizing:border-box}html,body{height:100%}body{margin:0;overflow:hidden;background:var(--navy);color:var(--ink);font:18px/1.42 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.deck{height:100%;position:relative}.slide{position:absolute;inset:0;display:grid;grid-template-rows:auto 1fr auto;min-height:100%;padding:clamp(22px,4vw,52px) clamp(26px,6vw,86px) 24px;background:radial-gradient(circle at 92% 8%,rgba(21,119,111,.12),transparent 29%),linear-gradient(145deg,var(--white),var(--paper));opacity:0;visibility:hidden;transform:translateX(24px);transition:.22s}.slide.active{opacity:1;visibility:visible;transform:none}.slide.dark{color:#fff;background:radial-gradient(circle at 84% 18%,rgba(44,158,146,.34),transparent 34%),linear-gradient(140deg,#0d1d35,#173d58 70%,#1c5d61)}
+    .topline{display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:800}.dark .topline{color:#c7d8e3}.content{display:grid;align-content:center;gap:clamp(18px,2.7vh,32px);width:min(1180px,100%);margin:0 auto}.wide{width:min(1340px,100%)}h1,h2,h3,p{margin-top:0}h1,h2,h3{letter-spacing:-.035em}h1{max-width:1120px;margin-bottom:18px;font-size:clamp(2.6rem,6vw,5.8rem);line-height:.98}h2{max-width:1150px;margin-bottom:8px;font-size:clamp(2rem,4.2vw,4.25rem);line-height:1.04}h3{margin-bottom:8px;font-size:clamp(1.02rem,1.6vw,1.34rem)}.lead{max-width:960px;margin:0;color:var(--muted);font-size:clamp(1rem,1.5vw,1.34rem)}.dark .lead{color:#d5e2e9}.big{max-width:1100px;font-size:clamp(1.35rem,2.8vw,2.75rem);font-weight:750;line-height:1.17;letter-spacing:-.035em}.accent{color:#61d0c2}.teal{color:var(--teal)}
+    .two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3vw,42px)}.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{padding:22px;border-top:4px solid var(--teal);background:rgba(255,255,255,.68);box-shadow:0 10px 28px rgba(21,42,64,.06)}.card.gold{border-color:var(--gold)}.dark .card{color:var(--ink)}.label{display:block;margin-bottom:8px;color:var(--muted);font-size:.69rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}.tag{display:inline-block;margin-bottom:12px;padding:6px 10px;border-radius:999px;color:#fff;background:var(--teal);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase}.tag.gold{background:#a66d0e}.five{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.point{min-height:190px;padding:18px;background:rgba(255,255,255,.68);border-top:4px solid var(--teal);box-shadow:0 8px 20px rgba(21,42,64,.05)}.point strong{display:block;margin-bottom:8px;color:var(--teal);font-size:1.4rem}.point p{margin:0;font-size:.88rem}.journey{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}.step{display:grid;align-content:center;min-height:126px;padding:16px;border-top:4px solid var(--teal);background:rgba(255,255,255,.7);font-size:.88rem;font-weight:650}.step.break{border-color:var(--gold);background:#f7e6c8}.step small{display:block;margin-bottom:6px;color:var(--muted);font-weight:800;text-transform:uppercase}.compare{width:100%;border-collapse:collapse;font-size:clamp(.78rem,1.1vw,.98rem)}.compare th,.compare td{padding:12px 13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.compare th{color:var(--muted);font-size:.68rem;letter-spacing:.07em;text-transform:uppercase}.compare td:first-child{width:20%;font-weight:750}.recommended{background:rgba(21,119,111,.08)}.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:12px;align-items:center}.box{min-height:152px;padding:21px;border-top:4px solid var(--teal);background:rgba(255,255,255,.7);box-shadow:var(--shadow)}.arrow{color:var(--teal);font-size:2rem;font-weight:900}.metric{font-size:clamp(1.5rem,3vw,3rem);font-weight:850;color:var(--teal);line-height:1.05}.citation{color:var(--muted);font-size:.64rem;line-height:1.35}.citation a{color:inherit}.dark .citation{color:#bed0dc}.controls{position:fixed;right:24px;bottom:18px;z-index:30;display:flex;gap:8px}.controls button{width:42px;height:42px;border:1px solid rgba(255,255,255,.28);border-radius:50%;color:#fff;background:rgba(13,30,54,.88);cursor:pointer}.progress{position:fixed;left:0;bottom:0;z-index:40;height:5px;width:100%;background:rgba(255,255,255,.18)}.progress span{display:block;height:100%;background:var(--gold);transition:width .22s}
+    @media(max-width:980px){body{overflow:auto}.deck{height:auto}.slide{position:relative;display:none;min-height:100vh;padding:22px 22px 70px}.slide.active{display:grid}.two,.three,.five,.journey,.flow{grid-template-columns:1fr}.point,.step{min-height:auto}.arrow{transform:rotate(90deg);justify-self:center}.compare{font-size:.75rem}.compare th,.compare td{padding:8px 6px}}@media print{@page{size:16in 9in;margin:0}body{overflow:visible;background:#fff}.slide{position:relative;display:grid!important;break-after:page;min-height:9in;opacity:1;visibility:visible;transform:none}.controls,.progress{display:none}}
+  </style>
+</head>
+<body>
+  <main class="deck" aria-live="polite">
+    <section class="slide dark active" data-title="The hidden delay">
+      <div class="topline"><span>DSV 2026 | University operations concepts</span><span>Mentor discussion</span></div>
+      <div class="content">
+        <h1>Winning research funding is not the end of the paperwork.</h1>
+        <p class="big">Before submission, one missed sponsor rule can stop review. After an award, researchers may still wait weeks before they can spend.</p>
+        <p class="lead">Two narrow opportunities for a bounded AI agent inside university research operations.</p>
+      </div>
+      <div class="citation"><span>1 / 8</span> | Concept-selection pitch. Evidence of the processes is documented; demand for either proposed product is not yet validated.</div>
+    </section>
+
+    <section class="slide" data-title="Two concepts">
+      <div class="topline"><span>The shortlist</span><span>Two separate concepts, one research lifecycle</span></div>
+      <div class="content">
+        <h2>Before funding and after funding</h2>
+        <div class="two">
+          <article class="card"><span class="tag">Concept 1 · Recommended</span><h3>Research Award Setup Coordinator</h3><p class="big">Turn varied award documents into a cited setup checklist and coordinated follow-ups.</p><p><strong>Primary outcome:</strong> faster account creation after an award arrives.</p></article>
+          <article class="card gold"><span class="tag gold">Concept 2</span><h3>Grant Proposal Compliance Checker</h3><p class="big">Turn each solicitation into a cited checklist and compare it with the final proposal.</p><p><strong>Primary outcome:</strong> fewer sponsor-specific misses before submission.</p></article>
+        </div>
+      </div>
+      <div class="citation"><span>2 / 8</span> | These remain separate product hypotheses so each has one user, one broken step, and one measurable outcome.</div>
+    </section>
+
+    <section class="slide" data-title="Concept 1: five tests">
+      <div class="topline"><span>Concept 1 | Mentor's five points</span><span>Post-award operations</span></div>
+      <div class="content wide">
+        <h2>A university wins the award. The researcher still cannot spend.</h2>
+        <div class="five">
+          <div class="point"><strong>1</strong><span class="label">Problem</span><p>Award-setup specialists manually read and re-key varied award terms, then chase prerequisites, delaying account creation.</p></div>
+          <div class="point"><strong>2</strong><span class="label">Target user</span><p>A post-award setup specialist in a university Sponsored Programs Office.</p></div>
+          <div class="point"><strong>3</strong><span class="label">Breaking point</span><p>A non-standard document must become accurate system fields, prerequisites, owners, and follow-ups.</p></div>
+          <div class="point"><strong>4</strong><span class="label">Evidence</span><p>Kentucky publishes an 8–18 business-day guide. Michigan State reports only about 53% within one month.</p></div>
+          <div class="point"><strong>5</strong><span class="label">Success metric</span><p>Median business days from non-federal award receipt to account number issued.</p></div>
+        </div>
+      </div>
+      <div class="citation"><span>3 / 8</span> | Sources: <a href="https://research.uky.edu/sites/default/files/sponsored-project-services-lead-times-guide.pdf">University of Kentucky lead-times guide</a>; <a href="https://cga.msu.edu/PL/Portal/319/OSPCGAMetrics">Michigan State OSP/CGA metrics</a>. Michigan State reported 1,367 awards in its cited period.</div>
+    </section>
+
+    <section class="slide" data-title="Concept 1: workflow and gap">
+      <div class="topline"><span>Concept 1 | Current journey</span><span>Exact residual gap to validate</span></div>
+      <div class="content wide">
+        <h2>The difficult step is not storage. It is interpretation and coordination.</h2>
+        <div class="journey">
+          <div class="step"><small>1</small>Award arrives by email or portal</div>
+          <div class="step break"><small>Break A</small>Read varied terms and re-key fields</div>
+          <div class="step break"><small>Break B</small>Infer prerequisites and owners</div>
+          <div class="step"><small>4</small>Chase PI, department, IRB, or cost-share office</div>
+          <div class="step"><small>5</small>Create the account</div>
+          <div class="step"><small>6</small>Notify the researcher</div>
+        </div>
+        <div class="two">
+          <div class="card"><span class="label">Agent contribution</span><p>Extract terms with page citations, flag uncertainty, create a prerequisite checklist, assign responsible offices, and draft internal follow-ups.</p></div>
+          <div class="card gold"><span class="label">Competition and opening</span><p>Huron, Kuali, Cayuse, InfoEd, Workday, and university-built tools already serve this market. Our residual hypothesis is <strong>non-federal and amendment documents plus prerequisite coordination</strong>.</p></div>
+        </div>
+      </div>
+      <div class="citation"><span>4 / 8</span> | Kentucky, Michigan, and the University of Idaho-linked AI4RA project show that award-document extraction is already being explored. We do not claim an empty market.</div>
+    </section>
+
+    <section class="slide" data-title="Concept 2: five tests">
+      <div class="topline"><span>Concept 2 | Mentor's five points</span><span>Pre-award operations</span></div>
+      <div class="content wide">
+        <h2>A strong proposal can lose before anyone reviews the research.</h2>
+        <div class="five">
+          <div class="point"><strong>1</strong><span class="label">Problem</span><p>Pre-award specialists manually check late proposal drafts against sponsor-specific instructions; a miss can prevent review.</p></div>
+          <div class="point"><strong>2</strong><span class="label">Target user</span><p>A university pre-award grants specialist responsible for institutional review.</p></div>
+          <div class="point"><strong>3</strong><span class="label">Breaking point</span><p>The final narrative must be compared with rules scattered across a long solicitation under deadline pressure.</p></div>
+          <div class="point"><strong>4</strong><span class="label">Evidence</span><p>NSF can return noncompliant proposals without review. Current platforms already perform many structural checks.</p></div>
+          <div class="point"><strong>5</strong><span class="label">Success metric</span><p>Sponsor-specific deficiencies caught before submission per 10 proposals.</p></div>
+        </div>
+      </div>
+      <div class="citation"><span>5 / 8</span> | Source: <a href="https://www.nsf.gov/policies/pappg/24-1/ch-2-proposal-preparation">NSF Proposal &amp; Award Policies and Procedures Guide</a>. Frequency of narrative misses remains unknown and must be measured.</div>
+    </section>
+
+    <section class="slide" data-title="Concept 2: workflow and gap">
+      <div class="topline"><span>Concept 2 | Current journey</span><span>A second reader, not a grant writer</span></div>
+      <div class="content wide">
+        <h2>The systems route forms. The administrator still reads the fine print.</h2>
+        <div class="journey">
+          <div class="step"><small>1</small>Sponsor publishes solicitation</div>
+          <div class="step"><small>2</small>Researcher prepares proposal</div>
+          <div class="step break"><small>Break A</small>Extract special requirements</div>
+          <div class="step break"><small>Break B</small>Find evidence in the final draft</div>
+          <div class="step"><small>5</small>Return corrections</div>
+          <div class="step"><small>6</small>Human authorizes submission</div>
+        </div>
+        <div class="two">
+          <div class="card"><span class="label">Agent contribution</span><p>Build a source-cited requirement checklist, match each requirement to proposal evidence, flag gaps and conflicts, and escalate uncertainty.</p></div>
+          <div class="card gold"><span class="label">Competition and opening</span><p>Cayuse, Kuali, Huron, InfoEd, Grants.gov, and Research.gov already validate much of the submission. The residual hypothesis is <strong>program-specific narrative requirements beyond form checks</strong>.</p></div>
+        </div>
+      </div>
+      <div class="citation"><span>6 / 8</span> | Commercial risk is high: an incumbent could add this narrow capability. The tool checks compliance; it never writes scientific content or submits a proposal.</div>
+    </section>
+
+    <section class="slide" data-title="Why bounded AI">
+      <div class="topline"><span>Why agentic AI</span><span>One bounded agent with human authority</span></div>
+      <div class="content wide">
+        <h2>Use AI only for the changing text. Use software for everything deterministic.</h2>
+        <div class="flow">
+          <div class="box"><span class="label">Inputs</span><h3>Approved documents</h3><p>Solicitation and proposal, or award document and institutional rules.</p></div>
+          <div class="arrow">→</div>
+          <div class="box"><span class="label">Bounded agent</span><h3>Read, compare, cite</h3><p>Extract variable requirements, match evidence, identify uncertainty, and recommend next actions.</p></div>
+          <div class="arrow">→</div>
+          <div class="box"><span class="label">Human-controlled output</span><h3>Review packet</h3><p>An administrator verifies every item and retains all approval, negotiation, and submission authority.</p></div>
+        </div>
+        <table class="compare"><thead><tr><th>AI interpretation</th><th>Ordinary software</th><th>Human decision</th></tr></thead><tbody><tr><td>Variable language, document comparison, evidence matching</td><td>Deadlines, routing, reminders, fixed validations, audit log</td><td>Accept terms, approve account, certify compliance, submit</td></tr></tbody></table>
+      </div>
+      <div class="citation"><span>7 / 8</span> | The agent does not make institutional, legal, scientific, budget, IRB, or sponsor-facing decisions.</div>
+    </section>
+
+    <section class="slide dark" data-title="Recommendation and next test">
+      <div class="topline"><span>Recommendation</span><span>Choose what to validate, not what to overclaim</span></div>
+      <div class="content">
+        <h2>Start with the Research Award Setup Coordinator.</h2>
+        <div class="two">
+          <div class="card"><span class="label">Why it leads</span><p class="big">A recurring operational workflow, a visible elapsed-time metric, and a clear coordination problem after the document is read.</p><p><strong>Main risk:</strong> waiting on other offices may dominate the delay, and software may not change their behavior.</p></div>
+          <div class="card gold"><span class="label">Cheapest credible test</span><p>At 2–3 universities, examine the last 20 award setups. Record sponsor type, receipt date, account date, active staff minutes, prerequisites, follow-ups, and waiting time by office.</p><p><strong>Then test Concept 2</strong> on the last 20 proposals by counting special-rule defects and review minutes.</p></div>
+        </div>
+        <p class="big">Our claim today: <span class="accent">documented problems, bounded concepts, and measurable hypotheses.</span></p>
+      </div>
+      <div class="citation"><span>8 / 8</span> | We are not claiming validated demand, willingness to pay, or a proven performance improvement. Those require direct institutional evidence.</div>
+    </section>
+  </main>
+  <div class="controls" aria-label="Slide controls"><button id="prev" aria-label="Previous slide">←</button><button id="next" aria-label="Next slide">→</button></div>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <script>
+    const slides=[...document.querySelectorAll('.slide')],bar=document.getElementById('progressBar');let current=Math.max(0,Math.min(slides.length-1,Number(location.hash.slice(1))-1||0));
+    function show(i,hash=true){current=Math.max(0,Math.min(slides.length-1,i));slides.forEach((s,n)=>s.classList.toggle('active',n===current));bar.style.width=`${(current+1)/slides.length*100}%`;document.title=`${current+1}/${slides.length} | ${slides[current].dataset.title}`;if(hash)history.replaceState(null,'',`#${current+1}`)}
+    document.getElementById('prev').onclick=()=>show(current-1);document.getElementById('next').onclick=()=>show(current+1);document.addEventListener('keydown',e=>{if(['ArrowRight','ArrowDown','PageDown',' '].includes(e.key)){e.preventDefault();show(current+1)}if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)){e.preventDefault();show(current-1)}if(e.key==='Home')show(0);if(e.key==='End')show(slides.length-1)});window.addEventListener('hashchange',()=>show(Number(location.hash.slice(1))-1,false));show(current,false);
+  </script>
+</body>
+</html>
